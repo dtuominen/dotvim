@@ -1,0 +1,3 @@
+This repo contains my personal vimfiles. Pathogen is used to load plugins, and 
+the plugins themselves are git submodules, which enables them to be updated 
+directly from github.

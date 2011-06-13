@@ -28,3 +28,6 @@
 [submodule "bundle/blackboard.vim"]
 	path = bundle/blackboard.vim
 	url = git://github.com/vim-scripts/blackboard.vim.git
+[submodule "bundle/tasklist"]
+	path = bundle/tasklist
+	url = git://github.com/vim-scripts/TaskList.vim.git
