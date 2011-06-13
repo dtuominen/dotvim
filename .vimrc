@@ -8,6 +8,9 @@ call pathogen#runtime_append_all_bundles()
 " Enable filetype plugins and plugins
 filetype plugin indent on
 
+"Enable omnicompletion
+set ofu=pythoncomplete#Complete
+
 " Show the ruler, show commands, show current mode, show line numbers
 set nocompatible
 set ruler
