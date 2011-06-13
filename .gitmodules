@@ -25,3 +25,6 @@
 [submodule "bundle/color-sampler-pack"]
 	path = bundle/color-sampler-pack
 	url = git://github.com/vim-scripts/Color-Sampler-Pack.git
+[submodule "bundle/blackboard.vim"]
+	path = bundle/blackboard.vim
+	url = git://github.com/vim-scripts/blackboard.vim.git

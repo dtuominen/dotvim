@@ -26,7 +26,7 @@ set guioptions-=T
 
 " Colorscheme (set t_Co=256 enables 256 color support)
 set t_Co=256
-":colorscheme blackboard
+:colorscheme vibrantink
 
 " Load NERDTree
 " autocmd VimEnter * NERDTree
