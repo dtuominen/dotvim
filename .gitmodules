@@ -4,3 +4,9 @@
 [submodule "bundle/pydoc.vim"]
 	path = bundle/pydoc.vim
 	url = git://github.com/vim-scripts/pydoc.vim.git
+[submodule "bundle/NERDTree"]
+	path = bundle/NERDTree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/ScrollColors"]
+	path = bundle/ScrollColors
+	url = git://github.com/vim-scripts/ScrollColors.git
