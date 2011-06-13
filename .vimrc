@@ -1,7 +1,11 @@
 " my .vimrc file
 " by: Chris Honey <chrishoney@gmail.com>
+" Enable pathogen to load plugins from ~/.vim/bundle
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
 " Show the ruler, show commands, show current mode, show line numbers
 
+set nocompatible
 set ruler
 set showcmd
 set showmode
