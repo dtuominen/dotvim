@@ -4,3 +4,6 @@
 [submodule "bundle/python.vim"]
 	path = bundle/python.vim
 	url = git://github.com/vim-scripts/python.vim.git
+[submodule "bundle/pydoc.vim"]
+	path = bundle/pydoc.vim
+	url = git://github.com/vim-scripts/pydoc.vim.git
