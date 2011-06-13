@@ -1,10 +1,14 @@
 " my .vimrc file
 " by: Chris Honey <chrishoney@gmail.com>
+
 " Enable pathogen to load plugins from ~/.vim/bundle
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
-" Show the ruler, show commands, show current mode, show line numbers
 
+" Enable filetype plugins and plugins
+filetype plugin indent on
+
+" Show the ruler, show commands, show current mode, show line numbers
 set nocompatible
 set ruler
 set showcmd
@@ -15,11 +19,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-" Enable filetype plugins and plugins
-filetype on
-filetype plugin indent on
 " Incremental search, set width to 79, turn off gui toolbar
-
 set incsearch
 set textwidth=79
 set guioptions-=T
