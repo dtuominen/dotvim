@@ -16,9 +16,6 @@
 [submodule "bundle/jinja.vim"]
 	path = bundle/jinja.vim
 	url = git://github.com/vim-scripts/Jinja.git
-[submodule "bundle/snipMate"]
-	path = bundle/snipMate
-	url = git://github.com/vim-scripts/snipMate.git
 [submodule "bundle/pythoncomplete"]
 	path = bundle/pythoncomplete
 	url = git://github.com/vim-scripts/pythoncomplete.git
