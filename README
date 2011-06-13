@@ -32,9 +32,6 @@ plugins are targeted towards python/django.
 [submodule "bundle/pythoncomplete"]
 	path = bundle/pythoncomplete
 	url = git://github.com/vim-scripts/pythoncomplete.git
-[submodule "bundle/snipMate"]
-	path = bundle/snipMate
-	url = git://github.com/vim-scripts/snipMate.git
 [submodule "bundle/color-sampler-pack"]
 	path = bundle/color-sampler-pack
 	url = git://github.com/vim-scripts/Color-Sampler-Pack.git
@@ -44,3 +41,9 @@ plugins are targeted towards python/django.
 [submodule "bundle/tasklist"]
 	path = bundle/tasklist
 	url = git://github.com/vim-scripts/TaskList.vim.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/pyflakes.vim"]
+	path = bundle/pyflakes.vim
+	url = git://github.com/vim-scripts/pyflakes.vim.git
