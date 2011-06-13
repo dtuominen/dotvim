@@ -10,3 +10,12 @@
 [submodule "bundle/ScrollColors"]
 	path = bundle/ScrollColors
 	url = git://github.com/vim-scripts/ScrollColors.git
+[submodule "bundle/django.vim"]
+	path = bundle/django.vim
+	url = git://github.com/vim-scripts/django.vim--Ronacher.git
+[submodule "bundle/jinja.vim"]
+	path = bundle/jinja.vim
+	url = git://github.com/vim-scripts/Jinja.git
+[submodule "bundle/snipMate"]
+	path = bundle/snipMate
+	url = git://github.com/vim-scripts/snipMate.git
