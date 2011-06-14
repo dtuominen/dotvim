@@ -14,7 +14,7 @@ plugins are targeted towards python/django.
 How to install these plugins on a new machine
 
 1. cd $HOME
-2. git clone http://github.com/boburder/dotvim.git ~/.vim
+2. git clone http://github.com/bobmurder/dotvim.git ~/.vim
 3. ln -s ~/.vim/.vimrc ~/.vimrc # for vim (console)
 4. ln -s ~/.vim/.gvimrc ~/.gvimrc # for gvim (graphical)
 5. cd ~/.vim
