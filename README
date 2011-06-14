@@ -23,7 +23,7 @@ How to install these plugins on a new machine
 You should be good to go after these steps. To test if it worked, try one of 
 the following:
 
-:Scroll    # This should open a colorscheme browser
+:SCROLL    # This should open a colorscheme browser
 :NERDTree  # This should open up a NERDTree window
 
 ############################################################
