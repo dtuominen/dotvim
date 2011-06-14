@@ -8,6 +8,25 @@ directly from github. I use vim for python development exclusively, so my
 plugins are targeted towards python/django.
 
 ############################################################
+# INSTRUCTIONS
+############################################################
+
+How to install these plugins on a new machine
+
+1. cd $HOME
+2. git clone http://github.com/boburder/dotvim.git ~/.vim
+3. ln -s ~/.vim/.vimrc ~/.vimrc # for vim (console)
+4. ln -s ~/.vim/.gvimrc ~/.gvimrc # for gvim (graphical)
+5. cd ~/.vim
+6. git submodule update --init
+
+You should be good to go after these steps. To test if it worked, try one of 
+the following:
+
+:Scroll    # This should open a colorscheme browser
+:NERDTree  # This should open up a NERDTree window
+
+############################################################
 # PLUGINS
 ############################################################
 
