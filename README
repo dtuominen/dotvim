@@ -1,15 +1,15 @@
-######################################################
+############################################################
 # DESCRIPTION
-######################################################
+############################################################
 
 This repo contains my personal vimfiles. Pathogen is used to load plugins, and 
 the plugins themselves are git submodules, which enables them to be updated 
 directly from github. I use vim for python development exclusively, so my
 plugins are targeted towards python/django.
 
-######################################################
+############################################################
 # PLUGINS
-######################################################
+############################################################
 
 [submodule "bundle/python.vim"]
 	path = bundle/python.vim

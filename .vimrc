@@ -39,14 +39,29 @@ set t_Co=256
 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
 autocmd BufRead *.py set autoindent tabstop=4 expandtab shiftwidth=4 softtabstop=4 smarttab
+
 " Function key bindings (<F2> - <F12>)
 
-" <F2> - Insert # at start of line
+" <F2> - Toggle syntax highlighting for django templates
 map <F2> :setfiletype htmldjango<CR>
-map <F3> ~h<Esc>
+
+" <F3> - Insert 60 # symbols for python comment boxes
+map <F3> 60i#<Esc>
+
 " <F4> - Toggle Line numbers
-map <F4> 3i<Space><Esc>
+map <F4> :set nu!
+
+" <F5> - Toggle NERDTree path browser
 map <F5> :NERDTreeToggle<CR>
+
+" <F6> - Quicksave file
 map <F6> :w<CR>
+
+" <F7> - Save all open files
 map <F7> :wa<CR>
-map <F12> :wa<CR>:qa!<CR>
+
+" <F10> - Save all open files and quit
+map <F10> :wa<CR>:qa!<CR>
+
+" <F12> - Open up ScrollColors to pick a colorscheme
+map <F12> :SCROLL<CR>
