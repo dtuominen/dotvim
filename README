@@ -60,9 +60,6 @@ the following:
 [submodule "bundle/tasklist"]
 	path = bundle/tasklist
 	url = git://github.com/vim-scripts/TaskList.vim.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
 [submodule "bundle/pyflakes.vim"]
 	path = bundle/pyflakes.vim
 	url = git://github.com/vim-scripts/pyflakes.vim.git
