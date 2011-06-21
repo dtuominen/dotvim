@@ -28,7 +28,7 @@ set textwidth=79
 set guioptions-=T
 
 " Colorscheme (set t_Co=256 enables 256 color support)
-set t_Co=256
+" set t_Co=256
 :colorscheme vibrantink
 
 " Load NERDTree
