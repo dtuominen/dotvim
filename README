@@ -20,6 +20,10 @@ How to install these plugins on a new machine
 5. cd ~/.vim
 6. git submodule update --init
 
+OPTIONAL: add *.pyc to ~/.vim/bundle/pyflakes.vim/.git/info/exclude 
+          to prevent 'Changed but not updated' messages from showing
+          up when you run 'git status'
+
 You should be good to go after these steps. To test if it worked, try one of 
 the following:
 
