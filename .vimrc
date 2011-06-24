@@ -40,6 +40,9 @@ set guioptions-=T
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
 autocmd BufRead *.py set autoindent tabstop=4 expandtab shiftwidth=4 softtabstop=4 smarttab
 
+" Bash config file syntax highlighting
+au BufNewFile,BufRead .bashrc,.bash_profile,.bash_logout,.bash_aliases,.bash_functions set filetype=sh
+
 " Function key bindings (<F2> - <F12>)
 
 " <F2> - Toggle syntax highlighting for django templates
