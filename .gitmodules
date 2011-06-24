@@ -31,3 +31,6 @@
 [submodule "bundle/pyflakes.vim"]
 	path = bundle/pyflakes.vim
 	url = git://github.com/vim-scripts/pyflakes.vim.git
+[submodule "bundle/htmljinja"]
+	path = bundle/htmljinja
+	url = git://github.com/ocim/htmljinja.vim.git
