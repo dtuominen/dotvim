@@ -18,7 +18,7 @@ set showcmd
 set showmode
 set number
 set expandtab
-set tabstop=4
+set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 
@@ -38,10 +38,15 @@ set guioptions-=T
 "Python File Settings (PEP-8)
 
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,with,try,except,finally,def,class
-autocmd BufRead *.py set autoindent tabstop=4 expandtab shiftwidth=4 softtabstop=4 smarttab
+autocmd BufRead *.py set autoindent tabstop=8 expandtab shiftwidth=4 softtabstop=4 smarttab
 
 " Bash config file syntax highlighting
 au BufNewFile,BufRead .bashrc,.bash_profile,.bash_logout,.bash_aliases,.bash_functions set filetype=sh
+
+" KEY BINDINGS
+
+" map jj to esc in insert mode
+:imap jj <Esc>
 
 " Function key bindings (<F2> - <F12>)
 
