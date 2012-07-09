@@ -11,7 +11,7 @@ filetype plugin indent on
 "Enable omnicompletion
 set ofu=pythoncomplete#Complete
 
-" Show the ruler, show commands, show current mode, show line numbers
+" Show the ruler, show commands, show current mode, show line numbers, enable syntax highlighting
 set nocompatible
 set ruler
 set showcmd
@@ -21,6 +21,7 @@ set expandtab
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
+syntax on
 
 " Incremental search, set width to 79, turn off gui toolbar
 set incsearch
