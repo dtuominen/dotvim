@@ -1,6 +1,8 @@
 " my .vimrc file
 " by: Chris Honey <chrishoney@gmail.com>
 
+syntax on
+
 " Enable pathogen to load plugins from ~/.vim/bundle
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
@@ -28,7 +30,7 @@ set textwidth=79
 set guioptions-=T
 
 " Colorscheme (set t_Co=256 enables 256 color support)
-" set t_Co=256
+set t_Co=256
 :colorscheme desert
 
 " Load NERDTree
@@ -42,7 +44,7 @@ autocmd BufRead *.py set autoindent tabstop=8 expandtab shiftwidth=4 softtabstop
 
 " Bash config file syntax highlighting
 au BufNewFile,BufRead .bashrc,.bash_profile,.bash_logout,.bash_aliases,.bash_functions set filetype=sh
-
+au BufRead .html setfiletype htmldjango
 " KEY BINDINGS
 
 " map jj to esc in insert mode
