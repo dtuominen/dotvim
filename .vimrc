@@ -45,7 +45,8 @@ autocmd BufRead *.py set autoindent tabstop=8 expandtab shiftwidth=4 softtabstop
 
 " Bash config file syntax highlighting
 au BufNewFile,BufRead .bashrc,.bash_profile,.bash_logout,.bash_aliases,.bash_functions set filetype=sh
-au BufRead .html setfiletype htmldjango
+au BufNewFile,BufRead .html setfiletype htmldjango
+
 " KEY BINDINGS
 
 " map jj to esc in insert mode
