@@ -37,3 +37,9 @@
 [submodule "bundle/solarized-colors"]
 	path = bundle/solarized-colors
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/html.vim"]
+	path = bundle/html.vim
+	url = https://github.com/xenoterracide/html.vim.git
+[submodule "bundle/mako.vim"]
+	path = bundle/mako.vim
+	url = https://github.com/vim-scripts/mako.vim.git
