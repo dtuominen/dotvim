@@ -57,6 +57,7 @@ map <leader>h :set hlsearch<cr>
 map <leader>H :set nohlsearch<cr>
 map <leader>d :setfiletype htmldjango<cr>
 map <leader>s :set filetype=sh<cr>
+map <leader>n :set nu!<cr>
 map <C-h> <C-w><Left>
 map <C-j> <C-w><Down>
 map <C-k> <C-w><Up>
