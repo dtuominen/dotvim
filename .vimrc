@@ -51,7 +51,7 @@ au BufNewFile,BufRead *.html setfiletype htmldjango
 " map leader to ,
 let mapleader = ','
 " various keybindings
-map <leader>p :set paste<cr>
+map <leader>p :set paste<cr>i
 map <leader>P :set nopaste<cr>
 map <leader>h :set hlsearch<cr>
 map <leader>H :set nohlsearch<cr>
