@@ -15,6 +15,7 @@ set expandtab
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
+set ruler
 syntax enable
 
 " Incremental search, set width to 79, turn off gui toolbar
@@ -34,6 +35,7 @@ autocmd BufRead *.py set autoindent textwidth=79
 " other filetype specific settings
 au BufNewFile,BufRead .bashrc,.bash_profile,.bash_logout,.bash_aliases,.bash_functions set filetype=sh
 au BufNewFile,BufRead *.html set filetype=htmldjango
+au BufNewFile,BufRead *.html set ts=2 sts=2 sw=2 expandtab
 
 " map jj to esc in insert mode
 :imap jj <Esc>
@@ -53,3 +55,10 @@ map <C-k> <C-w><Up>
 map <C-l> <C-w><Right>
 map <leader>[ <C-w>-
 map <leader>] <C-w>+
+" django surround
+" insert {%  %} ready for input
+map <leader>t i<C-g>s%
+map <leader>b i<C-g>s%block <Esc>a
+" insert {{  }} ready for input
+map <leader>B i<C-g>s%endblock<Esc>$
+map <leader>v i<C-g>sv
