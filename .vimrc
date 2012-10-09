@@ -33,7 +33,7 @@ autocmd BufRead *.py set autoindent textwidth=79
 
 " other filetype specific settings
 au BufNewFile,BufRead .bashrc,.bash_profile,.bash_logout,.bash_aliases,.bash_functions set filetype=sh
-au BufNewFile,BufRead *.html setfiletype htmldjango
+au BufNewFile,BufRead *.html set filetype=htmldjango
 
 " map jj to esc in insert mode
 :imap jj <Esc>
