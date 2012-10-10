@@ -1,4 +1,9 @@
-# dotvim
+#!/usr/bin/env python
+import os
+import re
+import sys
+
+head = """# dotvim
 
 I write regular python and django apps for the most part.
 Plugins are managed through pathogen and git submodules. Plugins are located
@@ -31,17 +36,9 @@ for the following terminals:
 
 ## Plugins
 
-* django.vim
-* gist-vim
-* html.vim
-* htmljinja
-* jinja.vim
-* mako.vim
-* python.vim
-* solarized-colors
-* surround
-* webapi-vim
+"""
 
+tail= """
 ## Feature toggles
 
 Toggle paste mode: `<leader>p|P`
@@ -118,3 +115,20 @@ surround mappings for django included in my .vimrc:
 {{  }}
 ```
 
+"""
+home = os.environ.get('HOME')
+vim_path = os.path.join(home, '.vim')
+gitmodules = os.path.join(vim_path, '.gitmodules')
+
+def modules():
+    with open(gitmodules) as f:
+        modules =  [line.lstrip() for line in f if 'path =' in line]
+        return ''.join(
+                    sorted(
+            [re.sub(r'path = bundle/', r'* ', line) for line in modules]
+            )
+        )
+
+if __name__ == '__main__':
+    readme = head + modules() + tail
+    sys.stdout.write(readme)
