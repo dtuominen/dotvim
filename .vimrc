@@ -6,42 +6,65 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
-" Various settings
+" solarized settings
+set background=dark
+colorscheme solarized
+syntax enable
+
+" general settings
 set nocompatible
 set showcmd
 set showmode
 set number
+set ruler
+set incsearch
+
+" tab settings
 set expandtab
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
-set ruler
-set incsearch
-set guioptions-=T
-syntax enable
+set autoindent
+
+" document settings
+set textwidth=80
 
 
-" solarized settings
-set background=dark
-colorscheme solarized
-
-"python
+" python
 autocmd BufRead *.py set cinwords=if,elif,else,for,while,with,try,except,finally,def,class
-autocmd BufRead *.py set shiftwidth=4 softtabstop=4 tabstop=8
-autocmd BufRead *.py set smarttab expandtab
-autocmd BufRead *.py set autoindent textwidth=79
+autocmd BufRead *.py set textwidth=79
 
-" other filetype specific settings
+" dotfiles
 au BufNewFile,BufRead .bashrc,.bash_profile,.bash_aliases,.bash_functions,.profile,.bashcolors set filetype=sh
-au BufNewFile,BufRead *.html set filetype=htmldjango
-au BufNewFile,BufRead *.html set ts=2 sts=2 sw=2 expandtab
 
-" map jj to esc in insert mode
+" html
+au BufNewFile,BufRead *.html set filetype=htmldjango
+au BufNewFile,BufRead *.html set tabstop=4 softtabstop=2 shiftwidth=2
+
+" general key binds
+
+" insert mode, jj = <Esc>
 :imap jj <Esc>
-" various keybindings
+:noremap <A> <Esc> 
+
+" leader key bindings
+"---------------------------------------" 
+
+" setup "
+"-------" 
+" set mapleader
 let mapleader = ','
-map <leader>p :set paste<cr>i
-map <leader>P :set nopaste<cr>
+
+" make testing vimrc easier
+nnoremap <silent> <leader>rc :source $MYVIMRC<cr>
+
+"---------------"
+" mode toggling "
+"---------------"
+" paste
+set pastetoggle=<leader>p
+"
+noremap <leader>h :set hlsearch! hlsearch?<cr>
 map <leader>h :set hlsearch<cr>
 map <leader>H :set nohlsearch<cr>
 map <leader>d :setfiletype htmldjango<cr>

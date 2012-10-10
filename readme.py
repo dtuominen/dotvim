@@ -41,15 +41,9 @@ for the following terminals:
 tail= """
 ## Feature toggles
 
-Toggle paste mode: `<leader>p|P`
+Toggle paste mode: `<leader>p`
 
-* p: `:set paste<cr>i`
-* P: `:set nopaste<cr>`
-
-Toggle highlight search: `<leader>h|H`
-
-* h: `:set hlsearch<cr>`
-* H: `:set nohlsearch`
+Toggle highlight search: `<leader>h`
 
 Toggle number lines: `<leader>n`
 
@@ -87,9 +81,10 @@ The following dotfiles have filetype=sh
 
 ### HTML and HTML Templates
 
-.html files automatically open with filetype=htmldjango. mako and jinja syntax
-files are included, just `:set filetype=mako|htmljinja`. There are some useful
-surround mappings for django included in my .vimrc:
+.html files automatically open with filetype=htmldjango. expandtab is set, and
+tab moves in 2 spaces. mako and jinja syntax files are included, just
+`:set filetype=mako|htmljinja`. There are some useful surround mappings for 
+django included in my .vimrc:
 
 `<leader>b` (ends in insert mode)
 
