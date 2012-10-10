@@ -16,11 +16,10 @@ set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 set ruler
-syntax enable
-
-" Incremental search, set width to 79, turn off gui toolbar
 set incsearch
 set guioptions-=T
+syntax enable
+
 
 " solarized settings
 set background=dark
@@ -33,7 +32,7 @@ autocmd BufRead *.py set smarttab expandtab
 autocmd BufRead *.py set autoindent textwidth=79
 
 " other filetype specific settings
-au BufNewFile,BufRead .bashrc,.bash_profile,.bash_logout,.bash_aliases,.bash_functions set filetype=sh
+au BufNewFile,BufRead .bashrc,.bash_profile,.bash_aliases,.bash_functions,.profile,.bashcolors set filetype=sh
 au BufNewFile,BufRead *.html set filetype=htmldjango
 au BufNewFile,BufRead *.html set ts=2 sts=2 sw=2 expandtab
 
