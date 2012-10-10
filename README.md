@@ -9,7 +9,7 @@ plugins are targeted towards python/django.
 
 How to install these plugins on a new machine
 
-* `git clone http://github.com/bobmurder/dotvim.git ~/.vim`
+* `git clone http://github.com/Chrishoney/dotvim.git ~/.vim`
 * `cd ~/.vim`
 * `./setup.sh`
 
