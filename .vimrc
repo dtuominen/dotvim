@@ -124,6 +124,9 @@ nnoremap <leader>] <C-w>+
 nnoremap <leader>[[ 10<C-w>-
 nnoremap <leader>]] 10<C-w>+
 
+nnoremap <C-`> :bp
+nnoremap <C-1> :bn
+
 "----------------------------------------------------------------------"
 " key binds                                                            "
 "----------------------------------------------------------------------"
@@ -154,27 +157,18 @@ map <leader>B i<C-g>s%endblock<Esc>$
 " -----pyflakes----- "
 let g:pyflakes_use_quickfix = 0
 let g:pep8_map='<leader>8'
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
 
 " -----nerdtree----- "
 map <leader>nt :NERDTreeToggle<CR>
 
 " -----Ack-----  "
 nmap <leadeR>a <ESC>:Ack!
+let g:gist_clip_command = 'pbcopy'
+let g:gist_detect_filetype = 1
+let g:gist_open_browser_after_post = 1
 
-nnoremap <
-" virtualenv "
-" ---------- "
-"py << EOF
-"import os.path
-"import sys
-"import vim
-"if 'VIRTUAL_ENV' in os.environ:
-    "project_base_dir = os.environ['VIRTUAL_ENV']
-    "sys.path.insert(0, project_base_dir)
-    "activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    "execfile(activate_this, dict(__file__=activate_this))
-"EOF
-
+" -----Command remaps----- "
+:command W w
+:command WQ wq
+:command Wq wq
+:command Q q
