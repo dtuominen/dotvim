@@ -20,6 +20,7 @@ filetype plugin indent on
 set background=dark
 colorscheme solarized
 syntax enable
+set t_Co=256
 
 " display "
 "---------"
