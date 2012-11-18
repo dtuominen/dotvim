@@ -1,0 +1,1892 @@
+
+
+No mapping found
+
+No mapping found
+Error detected while processing /Users/dylan/.vimrc:
+line  257:
+E174: Command already exists: add ! to replace it
+line  258:
+E174: Command already exists: add ! to replace it
+line  259:
+E174: Command already exists: add ! to replace it
+line  260:
+E174: Command already exists: add ! to replace it
+'urljoin' imported but unused
+'parse_qsl' imported but unused
+
+-- INSERT --
+-- INSERT ---- INSERT --
+-- INSERT --
+
+
+"validate.py" 
+"validate.py" 48L, 1598C written
+"validate.py" 48L, 1598C written-- INSERT ---- INSERT ---- INSERT --
+
+
+could not compile: invalid syntax (validate.py, line 30)
+could not compile: invalid syntax (validate.py, line 30)
+
+
+
+"validate.py" 
+"validate.py" 47L, 1521C written
+"validate.py" 47L, 1521C written-- INSERT --
+
+
+"validate.py" 
+"validate.py" 48L, 1522C written
+"validate.py" 48L, 1522C written-- INSERT --
+-- VISUAL LINE --
+7 fewer lines
+7 fewer lines
+
+"validate.py" 
+"validate.py" 42L, 1300C written
+"validate.py" 42L, 1300C written
+
+
+
+".vimrc" 
+".vimrc" 305L, 7927C written
+".vimrc" 305L, 7927C written
+
+
+"new.py" 
+"new.py" 0L, 0C
+-- INSERT --
+
+undefined name 'v'-- VISUAL --
+undefined name 'v'
+
+   <C-R>       *@<C-R>:PyflakesUpdate<CR>
+n  ,pK         *@:call <SNR>61_ShowPyDoc('<C-R><C-A>', 0)<CR>
+n  ,pk         *@:call <SNR>61_ShowPyDoc('<C-R><C-W>', 0)<CR>
+n  ,pW         *@:call <SNR>61_ShowPyDoc('<C-R><C-A>', 1)<CR>
+n  ,pw         *@:call <SNR>61_ShowPyDoc('<C-R><C-W>', 1)<CR>
+n  K           *@:call <SNR>61_ShowPyDoc(<SNR>61_ExpandModulePath(), 1)<CR>
+n  [m          *@:call <SNR>63_Python_jump('?^\s*\(class\|def\)')<CR>
+n  [[          *@:call <SNR>63_Python_jump('?^\(class\|def\)')<CR>
+n  ]m          *@:call <SNR>63_Python_jump('/^\s*\(class\|def\)')<CR>
+n  ]]          *@:call <SNR>63_Python_jump('/^\(class\|def\)')<CR>
+   dw          *@dw:PyflakesUpdate<CR>
+   dd          *@dd:PyflakesUpdate<CR>
+   u           *@u:PyflakesUpdate<CR>
+n  <C-G>       * :tag<Space>
+n  <C-H>       * <C-W><Left>
+n  <NL>        * <C-W><Down>
+n  <C-K>       * <C-W><Up>
+n  <C-L>       * <C-W><Right>
+n  <C-P>       * :<C-U>CtrlP<CR>
+n  <C-R>       * :<C-U>call <SNR>15_wrap("\<C-R>",v:count)<CR>
+o  %           * v:<C-U>call <SNR>14_Match_wrapper('',1,'o') <CR>
+v  %           * :<C-U>call <SNR>14_Match_wrapper('',1,'v') <CR>m'gv``
+n  %           * :<C-U>call <SNR>14_Match_wrapper('',1,'n') <CR>
+n  ,lm         * :match ErrorMsg '\%>80v.\+'<CR><Space>
+n  ,kv         * :ProjVim<CR>
+n  ,kr         * :ProjReload<CR>
+n  ,kt         * :ProjOpenTab<CR>
+n  ,ko         * :ProjOpen<CR>
+n  ,kn         * :ProjNotes<CR>
+n  ,km         * :ProjMenu<CR>
+n  ,ki         * :ProjInfo<CR>
+n  ,kf         * :ProjFile<CR>
+n  ,ka         * :ProjAdd<CR>
+n  ,8          * :call <SNR>24_Pep8()<CR>
+n  ,ca           <Plug>NERDCommenterAltDelims
+x  ,cu           <Plug>NERDCommenterUncomment
+n  ,cu           <Plug>NERDCommenterUncomment
+x  ,cb           <Plug>NERDCommenterAlignBoth
+n  ,cb           <Plug>NERDCommenterAlignBoth
+x  ,cl           <Plug>NERDCommenterAlignLeft
+n  ,cl           <Plug>NERDCommenterAlignLeft
+n  ,cA           <Plug>NERDCommenterAppend
+x  ,cy           <Plug>NERDCommenterYank
+n  ,cy           <Plug>NERDCommenterYank
+x  ,cs           <Plug>NERDCommenterSexy
+n  ,cs           <Plug>NERDCommenterSexy
+x  ,ci           <Plug>NERDCommenterInvert
+n  ,ci           <Plug>NERDCommenterInvert
+n  ,c$           <Plug>NERDCommenterToEOL
+x  ,cn           <Plug>NERDCommenterNested
+n  ,cn           <Plug>NERDCommenterNested
+x  ,cm           <Plug>NERDCommenterMinimal
+n  ,cm           <Plug>NERDCommenterMinimal
+x  ,c<Space>     <Plug>NERDCommenterToggle
+n  ,c<Space>     <Plug>NERDCommenterToggle
+x  ,cc           <Plug>NERDCommenterComment
+n  ,cc           <Plug>NERDCommenterComment
+n  ,t          * :tselect
+n  ,a            <Esc>:Ack!
+   ,nt           :NERDTreeToggle<CR>
+n  ,swp        * :s/\(.*\):\(.*\)/\2 : \1/
+   ,g            :GundoToggle<CR>
+n  ,sv         * <C-W>v
+n  ,sp         * <C-W>s
+n  ,]]         * 10<C-W>+
+n  ,[[         * 10<C-W>-
+n  ,]          * <C-W>+
+n  ,[          * <C-W>-
+   ,n          * :set nu!<CR>
+   ,h          * :set hlsearch! hlsearch?<CR>
+n  ,rd         * :read !
+n  ,rc         * :source $MYVIMRC<CR>
+n  .           * :<C-U>call repeat#run(v:count)<CR>
+x  S             <Plug>VSurround
+n  U           * :<C-U>call <SNR>15_wrap('U',v:count)<CR>
+n  [t          * :tprev
+o  [%          * v:<C-U>call <SNR>14_MultiMatch("bW", "o") <CR>
+v  [%            <Esc>[%m'gv``
+n  [%          * :<C-U>call <SNR>14_MultiMatch("bW", "n") <CR>
+n  \lm         * :match ErrorMsg '\%>80v.\+'<CR><Space>
+n  ]t          * :tnext
+v  ]f            :call PythonDec("function", 1)<CR>
+no ]f            :call PythonDec("function", 1)<CR>
+v  ]F            :call PythonDec("function", -1)<CR>
+no ]F            :call PythonDec("function", -1)<CR>
+v  ]j            :call PythonDec("class", 1)<CR>
+no ]j            :call PythonDec("class", 1)<CR>
+v  ]J            :call PythonDec("class", -1)<CR>
+no ]J            :call PythonDec("class", -1)<CR>
+   ]<Down>       :call PythonNextLine(1)<CR>
+   ]<Up>         :call PythonNextLine(-1)<CR>
+   ]d            :call PythonSelectObject("function")<CR>
+   ]c            :call PythonSelectObject("class")<CR>
+v  ]u            :call PythonUncommentSelection()<CR>
+no ]u            :call PythonUncommentSelection()<CR>
+v  ]#            :call PythonCommentSelection()<CR>
+no ]#            :call PythonCommentSelection()<CR>
+v  ]>            >
+no ]>            ]tV]e>
+v  ]<            <
+no ]<            ]tV]e<
+   ]v            ]tV]e
+v  ]e            :<C-U>PEoB<CR>m'gv``
+no ]e            :PEoB<CR>
+v  ]t            :<C-U>PBOB<CR>m'gv``
+o  ]t            :PBoB<CR>
+o  ]%          * v:<C-U>call <SNR>14_MultiMatch("W",  "o") <CR>
+v  ]%            <Esc>]%m'gv``
+n  ]%          * :<C-U>call <SNR>14_MultiMatch("W",  "n") <CR>
+v  a%            <Esc>[%v]%
+n  cs            <Plug>Csurround
+n  ds            <Plug>Dsurround
+n  gx            <Plug>NetrwBrowseX
+x  gS            <Plug>VgSurround
+o  g%          * v:<C-U>call <SNR>14_Match_wrapper('',0,'o') <CR>
+v  g%          * :<C-U>call <SNR>14_Match_wrapper('',0,'v') <CR>m'gv``
+n  g%          * :<C-U>call <SNR>14_Match_wrapper('',0,'n') <CR>
+n  u           * :<C-U>call <SNR>15_wrap('u',v:count)<CR>
+n  ySS           <Plug>YSsurround
+n  ySs           <Plug>YSsurround
+n  yss           <Plug>Yssurround
+n  yS            <Plug>YSurround
+n  ys            <Plug>Ysurround
+   <M-Down>      }
+   <D-Down>    * <C-End>
+   <M-Up>        {
+   <D-Up>      * <C-Home>
+   <M-Right>   * <C-Right>
+   <D-Right>   * <End>
+   <M-Left>    * <C-Left>
+   <D-Left>    * <Home>
+n  <Plug>NetrwBrowseX * :call netrw#NetrwBrowseX(expand("<cWORD>"),0)<CR>
+v  <Plug>VgSurround * :<C-U>call <SNR>28_opfunc(visualmode(),visualmode() ==# 'V' ? 0 : 1)<CR>
+v  <Plug>VSurround * :<C-U>call <SNR>28_opfunc(visualmode(),visualmode() ==# 'V' ? 1 : 0)<CR>
+n  <Plug>YSurround * :<C-U>set opfunc=<SNR>28_opfunc2<CR>g@
+n  <Plug>Ysurround * :<C-U>set opfunc=<SNR>28_opfunc<CR>g@
+n  <Plug>YSsurround * :<C-U>call <SNR>28_opfunc2(v:count1)<CR>
+n  <Plug>Yssurround * :<C-U>call <SNR>28_opfunc(v:count1)<CR>
+n  <Plug>Csurround * :<C-U>call <SNR>28_changesurround()<CR>
+n  <Plug>Dsurround * :<C-U>call <SNR>28_dosurround(<SNR>28_inputtarget())<CR>
+n  <Plug>SurroundRepeat * .
+n  <Plug>NERDCommenterAltDelims * :call <SNR>20_SwitchToAlternativeDelimiters(1)<CR>
+x  <Plug>NERDCommenterUncomment * :call NERDComment("x", "Uncomment")<CR>
+n  <Plug>NERDCommenterUncomment * :call NERDComment("n", "Uncomment")<CR>
+x  <Plug>NERDCommenterAlignBoth * :call NERDComment("x", "AlignBoth")<CR>
+n  <Plug>NERDCommenterAlignBoth * :call NERDComment("n", "AlignBoth")<CR>
+x  <Plug>NERDCommenterAlignLeft * :call NERDComment("x", "AlignLeft")<CR>
+n  <Plug>NERDCommenterAlignLeft * :call NERDComment("n", "AlignLeft")<CR>
+n  <Plug>NERDCommenterAppend * :call NERDComment("n", "Append")<CR>
+x  <Plug>NERDCommenterYank * :call NERDComment("x", "Yank")<CR>
+n  <Plug>NERDCommenterYank * :call NERDComment("n", "Yank")<CR>
+x  <Plug>NERDCommenterSexy * :call NERDComment("x", "Sexy")<CR>
+n  <Plug>NERDCommenterSexy * :call NERDComment("n", "Sexy")<CR>
+x  <Plug>NERDCommenterInvert * :call NERDComment("x", "Invert")<CR>
+n  <Plug>NERDCommenterInvert * :call NERDComment("n", "Invert")<CR>
+n  <Plug>NERDCommenterToEOL * :call NERDComment("n", "ToEOL")<CR>
+x  <Plug>NERDCommenterNested * :call NERDComment("x", "Nested")<CR>
+n  <Plug>NERDCommenterNested * :call NERDComment("n", "Nested")<CR>
+x  <Plug>NERDCommenterMinimal * :call NERDComment("x", "Minimal")<CR>
+n  <Plug>NERDCommenterMinimal * :call NERDComment("n", "Minimal")<CR>
+x  <Plug>NERDCommenterToggle * :call NERDComment("x", "Toggle")<CR>
+n  <Plug>NERDCommenterToggle * :call NERDComment("n", "Toggle")<CR>
+x  <Plug>NERDCommenterComment * :call NERDComment("x", "Comment")<CR>
+n  <Plug>NERDCommenterComment * :call NERDComment("n", "Comment")<CR>
+   <F4>          :TlistToggle<CR>
+   <F10>         :!ctags -R -a $HOME/django-trunk/django/<CR>
+   <F11>         :!ctags -R -a $VIRTUAL_ENV/lib/python2.7/site-packages<CR>
+n  <C-1>       * :bn
+n  <C-`>       * :bp
+v  <BS>          "-d
+
+   <C-R>       *@<C-R>:PyflakesUpdate<CR>
+n  ,pK         *@:call <SNR>61_ShowPyDoc('<C-R><C-A>', 0)<CR>
+n  ,pk         *@:call <SNR>61_ShowPyDoc('<C-R><C-W>', 0)<CR>
+n  ,pW         *@:call <SNR>61_ShowPyDoc('<C-R><C-A>', 1)<CR>
+n  ,pw         *@:call <SNR>61_ShowPyDoc('<C-R><C-W>', 1)<CR>
+n  K           *@:call <SNR>61_ShowPyDoc(<SNR>61_ExpandModulePath(), 1)<CR>
+n  [m          *@:call <SNR>63_Python_jump('?^\s*\(class\|def\)')<CR>
+n  [[          *@:call <SNR>63_Python_jump('?^\(class\|def\)')<CR>
+n  ]m          *@:call <SNR>63_Python_jump('/^\s*\(class\|def\)')<CR>
+n  ]]          *@:call <SNR>63_Python_jump('/^\(class\|def\)')<CR>
+   dw          *@dw:PyflakesUpdate<CR>
+   dd          *@dd:PyflakesUpdate<CR>
+   u           *@u:PyflakesUpdate<CR>
+n  <C-G>       * :tag<Space>
+n  <C-H>       * <C-W><Left>
+n  <NL>        * <C-W><Down>
+n  <C-K>       * <C-W><Up>
+n  <C-L>       * <C-W><Right>
+n  <C-P>       * :<C-U>CtrlP<CR>
+n  <C-R>       * :<C-U>call <SNR>15_wrap("\<C-R>",v:count)<CR>
+o  %           * v:<C-U>call <SNR>14_Match_wrapper('',1,'o') <CR>
+v  %           * :<C-U>call <SNR>14_Match_wrapper('',1,'v') <CR>m'gv``
+n  %           * :<C-U>call <SNR>14_Match_wrapper('',1,'n') <CR>
+n  ,lm         * :match ErrorMsg '\%>80v.\+'<CR><Space>
+n  ,kv         * :ProjVim<CR>
+n  ,kr         * :ProjReload<CR>
+n  ,kt         * :ProjOpenTab<CR>
+n  ,ko         * :ProjOpen<CR>
+n  ,kn         * :ProjNotes<CR>
+n  ,km         * :ProjMenu<CR>
+n  ,ki         * :ProjInfo<CR>
+n  ,kf         * :ProjFile<CR>
+n  ,ka         * :ProjAdd<CR>
+n  ,8          * :call <SNR>24_Pep8()<CR>
+n  ,ca           <Plug>NERDCommenterAltDelims
+x  ,cu           <Plug>NERDCommenterUncomment
+n  ,cu           <Plug>NERDCommenterUncomment
+x  ,cb           <Plug>NERDCommenterAlignBoth
+n  ,cb           <Plug>NERDCommenterAlignBoth
+x  ,cl           <Plug>NERDCommenterAlignLeft
+n  ,cl           <Plug>NERDCommenterAlignLeft
+n  ,cA           <Plug>NERDCommenterAppend
+x  ,cy           <Plug>NERDCommenterYank
+n  ,cy           <Plug>NERDCommenterYank
+x  ,cs           <Plug>NERDCommenterSexy
+n  ,cs           <Plug>NERDCommenterSexy
+x  ,ci           <Plug>NERDCommenterInvert
+n  ,ci           <Plug>NERDCommenterInvert
+n  ,c$           <Plug>NERDCommenterToEOL
+x  ,cn           <Plug>NERDCommenterNested
+n  ,cn           <Plug>NERDCommenterNested
+x  ,cm           <Plug>NERDCommenterMinimal
+n  ,cm           <Plug>NERDCommenterMinimal
+x  ,c<Space>     <Plug>NERDCommenterToggle
+n  ,c<Space>     <Plug>NERDCommenterToggle
+
+
+--- Options ---
+  autochdir           commentstring=#%s   foldmethod=indent   hlsearch            macmeta             pastetoggle=,p      shortname           suffixesadd=.py     weirdinvert         wrapmargin=5
+  autoindent          diff                guitablabel=%M%t    incsearch           modified            ruler               showcmd             switchbuf=useopen   wildignore=*.pyc    t_Co=256
+  background=dark     expandtab           helplang=en         langmenu=none       mouse=a             scroll=27           smartcase           syntax=python       wildignorecase      t_vb=
+  colorcolumn=95      filetype=python     hidden              laststatus=2        number              shiftwidth=4        softtabstop=4       textwidth=79        wildmenu            t_xs=y
+  backspace=indent,eol,start
+  cinkeys=0{,0},0),:,!^F,o,O,e
+  cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+  comments=s1:/*,mb:*,ex:*/,://,b:#,:XCOMM,n:>,fb:-
+  fileencoding=utf-8
+  fileencodings=ucs-bom,utf-8,default,latin1
+  guifont=Consolas For Powerline:h13
+  include=s*\(from\|import\)
+  includeexpr=substitute(v:fname,'\.','/','g')
+  indentexpr=GetPythonIndent(v:lnum)
+  indentkeys=0{,0},:,!^F,o,O,e,<:>,=elif,=except
+  omnifunc=pythoncomplete#Complete
+  printexpr=system('open -a Preview '.v:fname_in) + v:shell_error
+  runtimepath=~/.vim,~/.vim/bundle/autotag,~/.vim/bundle/cscope_maps,~/.vim/bundle/ctrl-p,~/.vim/bundle/django.vim,~/.vim/bundle/gist-vim,~/.vim/bundle/git,~/.vim/bundle/html.vim,~/.vim/bundle/htmldjango,~/.vim/bundle/htmljinja,~/.vim/bundle/jinja.vim,~/.vim/bundle/mako.vim,~/.vim/bundle/matchit,~/.vim/bundle/nerdcommenter,~/.vim/bundle/nerdtree,~/.vim/bundle/pep-8,~/.vim/bundle/proj-vim,~/.vim/bundle/pydoc-vim,~/.vim/bundle/pyflakes-pathogen,~/.vim/bundle/python.vim,~/.vim/bundle/solarized-colors,~/.vim/bundle/supertab,~/.vim/bundle/surround,~/.vim/bundle/taglist,~/.vim/bundle/vim-powerline,~/.vim/bundle/vim-repeat,~/.vim/bundle/vim-virtualenv,~/.vim/bundle/webapi-vim,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/vimfiles/after,~/.vim/after
+  showbreak=        
+  statusline=%!Pl#Statusline(0,1)
+  termencoding=utf-8
+  verbosefile=~/.vim/msgfile
+
+No mapping found
+
+No mapping found
+Error detected while processing /Users/dylan/.vimrc:
+line  257:
+E174: Command already exists: add ! to replace it
+line  258:
+E174: Command already exists: add ! to replace it
+line  259:
+E174: Command already exists: add ! to replace it
+line  260:
+E174: Command already exists: add ! to replace it
+
+
+26 fewer lines
+25 more lines
+
+28 fewer lines
+25 more lines
+
+
+".vimrc" 305 lines --10%--
+/split
+-- INSERT --
+
+
+".vimrc" 
+".vimrc" 305L, 7927C written
+".vimrc" 305L, 7927C written
+
+--- Options ---
+  autochdir           commentstring="%s   helplang=en         langmenu=none       mouse=a             scroll=27           smartcase           textwidth=95        wildmenu            t_xs=y
+  autoindent          expandtab           hidden              laststatus=2        number              shiftwidth=4        softtabstop=4       weirdinvert         wrapmargin=5
+  background=dark     filetype=vim        hlsearch            linebreak           pastetoggle=,p      shortname           switchbuf=useopen   wildignore=*.pyc    t_Co=256
+  colorcolumn=90      guitablabel=%M%t    incsearch           macmeta             ruler               showcmd             syntax=vim          wildignorecase      t_vb=
+  backspace=indent,eol,start
+  comments=sO:" -,mO:"  ,eO:"",:"
+  fileencoding=utf-8
+  fileencodings=ucs-bom,utf-8,default,latin1
+  guifont=Consolas For Powerline:h13
+  indentexpr=GetVimIndent()
+  indentkeys=0{,0},:,0#,!^F,o,O,e,=end,=else,=cat,=fina,=END,0\
+  printexpr=system('open -a Preview '.v:fname_in) + v:shell_error
+  runtimepath=~/.vim,~/.vim/bundle/autotag,~/.vim/bundle/cscope_maps,~/.vim/bundle/ctrl-p,~/.vim/bundle/django.vim,~/.vim/bundle/gist-vim,~/.vim/bundle/git,~/.vim/bundle/html.vim,~/.vim/bundle/htmldjango,~/.vim/bundle/htmljinja,~/.vim/bundle/jinja.vim,~/.vim/bundle/mako.vim,~/.vim/bundle/matchit,~/.vim/bundle/nerdcommenter,~/.vim/bundle/nerdtree,~/.vim/bundle/pep-8,~/.vim/bundle/proj-vim,~/.vim/bundle/pydoc-vim,~/.vim/bundle/pyflakes-pathogen,~/.vim/bundle/python.vim,~/.vim/bundle/solarized-colors,~/.vim/bundle/supertab,~/.vim/bundle/surround,~/.vim/bundle/taglist,~/.vim/bundle/vim-powerline,~/.vim/bundle/vim-repeat,~/.vim/bundle/vim-virtualenv,~/.vim/bundle/webapi-vim,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/vimfiles/after,~/.vim/after
+  showbreak=        
+  statusline=%!Pl#Statusline(0,1)
+  termencoding=utf-8
+  verbosefile=~/.vim/msgfile
+
+No mapping found
+
+No mapping found
+line  257:
+E174: Command already exists: add ! to replace it
+line  258:
+E174: Command already exists: add ! to replace it
+line  259:
+E174: Command already exists: add ! to replace it
+line  260:
+E174: Command already exists: add ! to replace it
+
+
+37 fewer lines
+22 more lines
+
+34 fewer lines
+23 more lines
+
+"textshift.py" 
+"textshift.py" 18L, 720C
+
+
+E37: No write since last change (add ! to override)
+E162: No write since last change for buffer "new.py"
+"new.py" [Modified] 1 line --100%--
+
+E37: No write since last change (add ! to override)
+E162: No write since last change for buffer "new.py"
+
+
+No mapping found
+
+No mapping found
+
+
+SpecialKey     xxx term=bold ctermfg=9 gui=bold guifg=#657b83 guibg=#073642
+NonText        xxx term=bold ctermfg=9 gui=bold guifg=#657b83
+Directory      xxx ctermfg=11 guifg=#268bd2
+ErrorMsg       xxx term=reverse ctermfg=15 ctermbg=4 gui=reverse guifg=#dc322f
+IncSearch      xxx term=standout cterm=reverse gui=standout guifg=#cb4b16
+Search         xxx term=reverse ctermfg=0 ctermbg=14 gui=reverse guifg=#b58900
+MoreMsg        xxx ctermfg=10 guifg=#268bd2
+ModeMsg        xxx cterm=bold guifg=#268bd2
+LineNr         xxx ctermfg=14 guifg=#586e75 guibg=#073642
+CursorLineNr   xxx term=bold ctermfg=14 gui=bold guifg=Yellow
+Question       xxx term=bold ctermfg=10 gui=bold guifg=#2aa198
+StatusLine     xxx term=reverse cterm=bold,reverse gui=reverse guifg=#93a1a1 guibg=#073642
+StatusLineNC   xxx term=reverse cterm=reverse gui=reverse guifg=#657b83 guibg=#073642
+VertSplit      xxx cterm=reverse guifg=#657b83 guibg=#657b83
+Title          xxx term=bold ctermfg=13 gui=bold guifg=#cb4b16
+Visual         xxx term=reverse cterm=reverse gui=reverse guifg=#586e75 guibg=#002b36
+VisualNOS      xxx term=reverse cterm=bold,underline gui=reverse guibg=#073642
+WarningMsg     xxx term=bold ctermfg=12 gui=bold guifg=#dc322f
+WildMenu       xxx term=reverse ctermfg=0 ctermbg=14 gui=reverse guifg=#eee8d5 guibg=#073642
+Folded         xxx term=bold,underline ctermfg=11 ctermbg=8 gui=bold,underline guifg=#839496
+                   guibg=#073642 guisp=#002b36
+FoldColumn     xxx ctermfg=11 ctermbg=8 guifg=#839496 guibg=#073642
+DiffAdd        xxx term=bold ctermbg=1 gui=bold guifg=#719e07 guibg=#073642 guisp=#719e07
+DiffChange     xxx term=bold ctermbg=5 gui=bold guifg=#b58900 guibg=#073642 guisp=#b58900
+DiffDelete     xxx term=bold ctermfg=9 ctermbg=3 gui=bold guifg=#dc322f guibg=#073642
+DiffText       xxx term=bold cterm=bold ctermbg=12 gui=bold guifg=#268bd2 guibg=#073642
+                   guisp=#268bd2
+SignColumn     xxx ctermfg=11 ctermbg=8 guifg=#839496 guibg=Grey
+Conceal        xxx ctermfg=7 ctermbg=8 guifg=#268bd2
+SpellBad       xxx term=undercurl ctermbg=12 gui=undercurl guisp=#dc322f
+SpellCap       xxx term=undercurl ctermbg=9 gui=undercurl guisp=#6c71c4
+SpellRare      xxx term=undercurl ctermbg=13 gui=undercurl guisp=#2aa198
+SpellLocal     xxx term=undercurl ctermbg=11 gui=undercurl guisp=#b58900
+Pmenu          xxx term=reverse ctermfg=0 ctermbg=13 gui=reverse guifg=#839496 guibg=#073642
+PmenuSel       xxx term=reverse ctermfg=8 ctermbg=0 gui=reverse guifg=#586e75 guibg=#eee8d5
+PmenuSbar      xxx term=reverse ctermbg=7 gui=reverse guifg=#eee8d5 guibg=#839496
+PmenuThumb     xxx term=reverse ctermbg=15 gui=reverse guifg=#839496 guibg=#002b36
+TabLine        xxx term=underline cterm=underline ctermfg=15 ctermbg=8 gui=underline guifg=#839496
+                   guibg=#073642 guisp=#839496
+TabLineSel     xxx term=underline,reverse cterm=bold gui=underline,reverse guifg=#586e75
+                   guibg=#eee8d5 guisp=#839496
+TabLineFill    xxx term=underline cterm=reverse gui=underline guifg=#839496 guibg=#073642
+                   guisp=#839496
+CursorColumn   xxx ctermbg=8 guibg=#073642
+CursorLine     xxx cterm=underline guibg=#073642 guisp=#93a1a1
+ColorColumn    xxx ctermbg=4 guibg=#073642
+Cursor         xxx guifg=#002b36 guibg=#839496
+lCursor        xxx guifg=bg guibg=fg
+                   links to Cursor
+MatchParen     xxx term=bold ctermbg=3 gui=bold guifg=#dc322f guibg=#586e75
+Normal         xxx guifg=#839496 guibg=#002b36
+Comment        xxx term=italic ctermfg=11 gui=italic guifg=#586e75
+Constant       xxx ctermfg=13 guifg=#2aa198
+Identifier     xxx cterm=bold ctermfg=11 guifg=#268bd2
+Statement      xxx ctermfg=14 guifg=#719e07
+PreProc        xxx ctermfg=9 guifg=#cb4b16
+Type           xxx ctermfg=10 guifg=#b58900
+Special        xxx ctermfg=12 guifg=#dc322f
+Underlined     xxx cterm=underline ctermfg=9 guifg=#6c71c4
+Ignore         xxx ctermfg=0
+Error          xxx term=bold ctermfg=15 ctermbg=12 gui=bold guifg=#dc322f
+Todo           xxx term=bold ctermfg=0 ctermbg=14 gui=bold guifg=#d33682
+vimVar         xxx links to Identifier
+vimFunc        xxx links to Function
+Function       xxx links to Identifier
+vimUserFunc    xxx links to Function
+helpSpecial    xxx links to Special
+vimSet         xxx links to Normal
+vimSetEqual    xxx links to Normal
+vimCommentString xxx guifg=#6c71c4
+vimCommand     xxx guifg=#b58900
+vimCmdSep      xxx term=bold gui=bold guifg=#268bd2
+helpExample    xxx guifg=#93a1a1
+helpOption     xxx guifg=#2aa198
+helpNote       xxx guifg=#d33682
+helpVim        xxx guifg=#d33682
+helpHyperTextJump xxx term=underline gui=underline guifg=#268bd2
+helpHyperTextEntry xxx guifg=#719e07
+vimIsCommand   xxx guifg=#657b83
+vimSynMtchOpt  xxx guifg=#b58900
+vimSynType     xxx guifg=#2aa198
+vimHiLink      xxx guifg=#268bd2
+vimHiGroup     xxx guifg=#268bd2
+vimGroup       xxx term=bold,underline gui=bold,underline guifg=#268bd2
+diffAdded      xxx links to Statement
+diffLine       xxx links to Identifier
+gitcommitComment xxx term=italic gui=italic guifg=#586e75
+gitcommitUntracked xxx links to gitcommitComment
+gitcommitDiscarded xxx links to gitcommitComment
+gitcommitSelected xxx links to gitcommitComment
+gitcommitUnmerged xxx term=bold gui=bold guifg=#719e07
+gitcommitOnBranch xxx term=bold gui=bold guifg=#586e75
+gitcommitBranch xxx term=bold gui=bold guifg=#d33682
+gitcommitNoBranch xxx links to gitcommitBranch
+gitcommitDiscardedType xxx guifg=#dc322f
+gitcommitSelectedType xxx guifg=#719e07
+gitcommitHeader xxx guifg=#586e75
+gitcommitUntrackedFile xxx term=bold gui=bold guifg=#2aa198
+gitcommitDiscardedFile xxx term=bold gui=bold guifg=#dc322f
+gitcommitSelectedFile xxx term=bold gui=bold guifg=#719e07
+gitcommitUnmergedFile xxx term=bold gui=bold guifg=#b58900
+gitcommitFile  xxx term=bold gui=bold guifg=#839496
+gitcommitDiscardedArrow xxx links to gitcommitDiscardedFile
+gitcommitSelectedArrow xxx links to gitcommitSelectedFile
+gitcommitUnmergedArrow xxx links to gitcommitUnmergedFile
+htmlTag        xxx guifg=#586e75
+htmlEndTag     xxx guifg=#586e75
+htmlTagN       xxx term=bold gui=bold guifg=#93a1a1
+htmlTagName    xxx term=bold gui=bold guifg=#268bd2
+htmlSpecialTagName xxx term=italic gui=italic guifg=#268bd2
+htmlArg        xxx guifg=#657b83
+javaScript     xxx guifg=#b58900
+perlHereDoc    xxx guifg=#93a1a1 guibg=#002b36
+perlVarPlain   xxx guifg=#b58900 guibg=#002b36
+perlStatementFileDesc xxx guifg=#2aa198 guibg=#002b36
+texStatement   xxx guifg=#2aa198 guibg=#002b36
+texMathZoneX   xxx guifg=#b58900 guibg=#002b36
+texMathMatcher xxx guifg=#b58900 guibg=#002b36
+texRefLabel    xxx guifg=#b58900 guibg=#002b36
+rubyDefine     xxx term=bold gui=bold guifg=#93a1a1 guibg=#002b36
+cPreCondit     xxx guifg=#cb4b16
+VarId          xxx guifg=#268bd2
+ConId          xxx guifg=#b58900
+hsImport       xxx guifg=#d33682
+hsString       xxx guifg=#657b83
+hsStructure    xxx guifg=#2aa198
+hs_hlFunctionName xxx guifg=#268bd2
+hsStatement    xxx guifg=#2aa198
+hsImportLabel  xxx guifg=#2aa198
+hs_OpFunctionName xxx guifg=#b58900
+hs_DeclareFunction xxx guifg=#cb4b16
+hsVarSym       xxx guifg=#2aa198
+hsType         xxx guifg=#b58900
+hsTypedef      xxx guifg=#2aa198
+hsModuleName   xxx term=underline gui=underline guifg=#719e07
+hsModuleStartLabel xxx guifg=#d33682
+                   links to hsStructure
+hsImportParams xxx links to Delimiter
+Delimiter      xxx links to Special
+hsDelimTypeExport xxx links to Delimiter
+hsModuleWhereLabel xxx links to hsModuleStartLabel
+hsNiceOperator xxx guifg=#2aa198
+pandocTitleBlock xxx guifg=#268bd2
+pandocTitleBlockTitle xxx term=bold gui=bold guifg=#268bd2
+pandocTitleComment xxx term=bold gui=bold guifg=#268bd2
+pandocComment  xxx term=italic gui=italic guifg=#586e75
+pandocVerbatimBlock xxx guifg=#b58900
+pandocVerbatimBlockDeep xxx links to pandocVerbatimBlock
+pandocCodeBlock xxx links to pandocVerbatimBlock
+pandocCodeBlockDelim xxx links to pandocVerbatimBlock
+pandocBlockQuote xxx guifg=#268bd2
+pandocBlockQuoteLeader1 xxx guifg=#268bd2
+pandocBlockQuoteLeader2 xxx guifg=#2aa198
+pandocBlockQuoteLeader3 xxx guifg=#b58900
+pandocBlockQuoteLeader4 xxx guifg=#dc322f
+pandocBlockQuoteLeader5 xxx guifg=#839496
+pandocBlockQuoteLeader6 xxx guifg=#586e75
+pandocListMarker xxx guifg=#d33682
+pandocListReference xxx term=underline gui=underline guifg=#d33682
+pandocDefinitionBlock xxx guifg=#6c71c4
+pandocDefinitionTerm xxx term=standout gui=standout guifg=#6c71c4
+pandocDefinitionIndctr xxx term=bold gui=bold guifg=#6c71c4
+pandocEmphasisDefinition xxx term=italic gui=italic guifg=#6c71c4
+pandocEmphasisNestedDefinition xxx term=bold gui=bold guifg=#6c71c4
+pandocStrongEmphasisDefinition xxx term=bold gui=bold guifg=#6c71c4
+pandocStrongEmphasisNestedDefinition xxx term=bold gui=bold guifg=#6c71c4
+pandocStrongEmphasisEmphasisDefinition xxx term=bold gui=bold guifg=#6c71c4
+pandocStrikeoutDefinition xxx term=reverse gui=reverse guifg=#6c71c4
+pandocVerbatimInlineDefinition xxx guifg=#6c71c4
+pandocSuperscriptDefinition xxx guifg=#6c71c4
+pandocSubscriptDefinition xxx guifg=#6c71c4
+pandocTable    xxx guifg=#268bd2
+pandocTableStructure xxx guifg=#268bd2
+pandocTableStructureTop xxx links to pandocTableStructre
+pandocTableStructre xxx cleared
+pandocTableStructureEnd xxx links to pandocTableStructre
+pandocTableZebraLight xxx guifg=#268bd2 guibg=#002b36
+pandocTableZebraDark xxx guifg=#268bd2 guibg=#073642
+pandocEmphasisTable xxx term=italic gui=italic guifg=#268bd2
+pandocEmphasisNestedTable xxx term=bold gui=bold guifg=#268bd2
+pandocStrongEmphasisTable xxx term=bold gui=bold guifg=#268bd2
+pandocStrongEmphasisNestedTable xxx term=bold gui=bold guifg=#268bd2
+pandocStrongEmphasisEmphasisTable xxx term=bold gui=bold guifg=#268bd2
+pandocStrikeoutTable xxx term=reverse gui=reverse guifg=#268bd2
+pandocVerbatimInlineTable xxx guifg=#268bd2
+pandocSuperscriptTable xxx guifg=#268bd2
+pandocSubscriptTable xxx guifg=#268bd2
+pandocHeading  xxx term=bold gui=bold guifg=#cb4b16
+pandocHeadingMarker xxx term=bold gui=bold guifg=#b58900
+pandocEmphasisHeading xxx term=bold gui=bold guifg=#cb4b16
+pandocEmphasisNestedHeading xxx term=bold gui=bold guifg=#cb4b16
+pandocStrongEmphasisHeading xxx term=bold gui=bold guifg=#cb4b16
+pandocStrongEmphasisNestedHeading xxx term=bold gui=bold guifg=#cb4b16
+pandocStrongEmphasisEmphasisHeading xxx term=bold gui=bold guifg=#cb4b16
+pandocStrikeoutHeading xxx term=reverse gui=reverse guifg=#cb4b16
+pandocVerbatimInlineHeading xxx term=bold gui=bold guifg=#cb4b16
+pandocSuperscriptHeading xxx term=bold gui=bold guifg=#cb4b16
+pandocSubscriptHeading xxx term=bold gui=bold guifg=#cb4b16
+pandocLinkDelim xxx guifg=#586e75
+pandocLinkLabel xxx term=underline gui=underline guifg=#268bd2
+pandocLinkText xxx term=bold,underline gui=bold,underline guifg=#268bd2
+pandocLinkURL  xxx term=underline gui=underline guifg=#657b83
+pandocLinkTitle xxx term=underline gui=underline guifg=#657b83
+pandocLinkTitleDelim xxx term=underline gui=underline guifg=#586e75 guisp=#657b83
+pandocLinkDefinition xxx term=underline gui=underline guifg=#2aa198 guisp=#657b83
+pandocLinkDefinitionID xxx term=bold gui=bold guifg=#268bd2
+pandocImageCaption xxx term=bold,underline gui=bold,underline guifg=#6c71c4
+pandocFootnoteLink xxx term=underline gui=underline guifg=#719e07
+pandocFootnoteDefLink xxx term=bold gui=bold guifg=#719e07
+pandocFootnoteInline xxx term=bold,underline gui=bold,underline guifg=#719e07
+pandocFootnote xxx guifg=#719e07
+pandocCitationDelim xxx guifg=#d33682
+pandocCitation xxx guifg=#d33682
+pandocCitationID xxx term=underline gui=underline guifg=#d33682
+pandocCitationRef xxx guifg=#d33682
+pandocStyleDelim xxx guifg=#586e75
+pandocEmphasis xxx term=italic gui=italic guifg=#839496
+pandocEmphasisNested xxx term=bold gui=bold guifg=#839496
+pandocStrongEmphasis xxx term=bold gui=bold guifg=#839496
+pandocStrongEmphasisNested xxx term=bold gui=bold guifg=#839496
+pandocStrongEmphasisEmphasis xxx term=bold gui=bold guifg=#839496
+pandocStrikeout xxx term=reverse gui=reverse guifg=#586e75
+pandocVerbatimInline xxx guifg=#b58900
+pandocSuperscript xxx guifg=#6c71c4
+pandocSubscript xxx guifg=#6c71c4
+pandocRule     xxx term=bold gui=bold guifg=#268bd2
+pandocRuleLine xxx term=bold gui=bold guifg=#268bd2
+pandocEscapePair xxx term=bold gui=bold guifg=#dc322f
+pandocNonBreakingSpace xxx term=reverse gui=reverse guifg=#dc322f
+pandocEscapedCharacter xxx links to pandocEscapePair
+pandocLineBreak xxx links to pandocEscapePair
+pandocMetadataDelim xxx guifg=#586e75
+pandocMetadata xxx term=bold gui=bold guifg=#268bd2
+pandocMetadataKey xxx guifg=#268bd2
+pandocMetadataTitle xxx links to pandocMetadata
+String         xxx links to Constant
+Character      xxx links to Constant
+Number         xxx links to Constant
+Boolean        xxx links to Constant
+Float          xxx links to Number
+Conditional    xxx links to Statement
+Repeat         xxx links to Statement
+Label          xxx links to Statement
+Operator       xxx links to Statement
+Keyword        xxx links to Statement
+Exception      xxx links to Statement
+Include        xxx links to PreProc
+Define         xxx links to PreProc
+Macro          xxx links to PreProc
+PreCondit      xxx links to PreProc
+StorageClass   xxx links to Type
+Structure      xxx links to Type
+Typedef        xxx links to Type
+Tag            xxx links to Special
+SpecialChar    xxx links to Special
+SpecialComment xxx links to Special
+Debug          xxx links to Special
+Plea002b3618005f87b xxx cterm=bold ctermfg=234 ctermbg=24 gui=bold guifg=#002b36 guibg=#005f87
+Plfcd0d0d018005f87N xxx ctermfg=252 ctermbg=24 guifg=#d0d0d0 guibg=#005f87
+Plfeeee8d518005f87b xxx cterm=bold ctermfg=254 ctermbg=24 gui=bold guifg=#eee8d5 guibg=#005f87
+Pl18005f87eb073642N xxx ctermfg=24 ctermbg=235 guifg=#005f87 guibg=#073642
+Ple7ffffffeb073642N xxx ctermfg=231 ctermbg=235 guifg=#ffffff guibg=#073642
+Ple6fdf6e3a0dc322fb xxx cterm=bold ctermfg=230 ctermbg=160 gui=bold guifg=#fdf6e3 guibg=#dc322f
+Pla0dc322feb073642N xxx ctermfg=160 ctermbg=235 guifg=#dc322f guibg=#073642
+Plf1626262eb073642N xxx ctermfg=241 ctermbg=235 guifg=#626262 guibg=#073642
+Plf593a1a1eb073642b xxx cterm=bold ctermfg=245 ctermbg=235 gui=bold guifg=#93a1a1 guibg=#073642
+Pleb073642eb073642N xxx ctermfg=235 ctermbg=235 guifg=#073642 guibg=#073642
+Pl7587d7ff18005f87N xxx ctermfg=117 ctermbg=24 guifg=#87d7ff guibg=#005f87
+Ple6fdf6e31f0087afb xxx cterm=bold ctermfg=230 ctermbg=31 gui=bold guifg=#fdf6e3 guibg=#0087af
+Pl1f0087afeb073642N xxx ctermfg=31 ctermbg=235 guifg=#0087af guibg=#073642
+Plf593a1a1ea002b36b xxx cterm=bold ctermfg=245 ctermbg=234 gui=bold guifg=#93a1a1 guibg=#002b36
+Plea002b36eb073642N xxx ctermfg=234 ctermbg=235 guifg=#002b36 guibg=#073642
+Ple6fdf6e33d6c71c4N xxx ctermfg=230 ctermbg=61 guifg=#fdf6e3 guibg=#6c71c4
+Pl3d6c71c418005f87N xxx ctermfg=61 ctermbg=24 guifg=#6c71c4 guibg=#005f87
+Plf58a8a8aec303030N xxx ctermfg=245 ctermbg=236 guifg=#8a8a8a guibg=#303030
+Plec303030eb073642N xxx ctermfg=236 ctermbg=235 guifg=#303030 guibg=#073642
+Plf593a1a1eb073642N xxx ctermfg=245 ctermbg=235 guifg=#93a1a1 guibg=#073642
+Plfeeee8d5eb073642N xxx ctermfg=254 ctermbg=235 guifg=#eee8d5 guibg=#073642
+Pleb07364218005f87N xxx ctermfg=235 ctermbg=24 guifg=#073642 guibg=#005f87
+Plfcd0d0d018005f87b xxx cterm=bold ctermfg=252 ctermbg=24 gui=bold guifg=#d0d0d0 guibg=#005f87
+Pl18005f8721268bd2N xxx ctermfg=24 ctermbg=33 guifg=#005f87 guibg=#268bd2
+Ple6fdf6e321268bd2N xxx ctermfg=230 ctermbg=33 guifg=#fdf6e3 guibg=#268bd2
+Pl21268bd2eb073642N xxx ctermfg=33 ctermbg=235 guifg=#268bd2 guibg=#073642
+Plef4e4e4eeb073642N xxx ctermfg=239 ctermbg=235 guifg=#4e4e4e guibg=#073642
+Plef4e4e4eeb073642b xxx cterm=bold ctermfg=239 ctermbg=235 gui=bold guifg=#4e4e4e guibg=#073642
+Pl3d6c71c4eb073642N xxx ctermfg=61 ctermbg=235 guifg=#6c71c4 guibg=#073642
+Pl40859900eb073642N xxx ctermfg=64 ctermbg=235 guifg=#859900 guibg=#073642
+Pleb073642ea002b36N xxx ctermfg=235 ctermbg=234 guifg=#073642 guibg=#002b36
+Pl94afd700ea002b36b xxx cterm=bold ctermfg=148 ctermbg=234 gui=bold guifg=#afd700 guibg=#002b36
+Plea002b36ea002b36N xxx ctermfg=234 ctermbg=234 guifg=#002b36 guibg=#002b36
+Ple7ffffffea002b36N xxx ctermfg=231 ctermbg=234 guifg=#ffffff guibg=#002b36
+Pl40859900ea002b36N xxx ctermfg=64 ctermbg=234 guifg=#859900 guibg=#002b36
+Plf4839496ea002b36N xxx ctermfg=244 ctermbg=234 guifg=#839496 guibg=#002b36
+"Highlight test" [New File]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Type  :quit<Enter>  to exit Vim
+
+Error detected while processing VimLeavePre Auto commands for "*":
+E94: No matching buffer for Highlight\ test
+
+No mapping found
+
+No mapping found-- INSERT (paste) --
+
+
+-- INSERT (paste) --
+-- INSERT (paste) --
+-- INSERT (paste) --
+-- INSERT (paste) --
+-- INSERT (paste) --
+-- INSERT (paste) --
+-- INSERT (paste) --
+-- INSERT (paste) --
+
+
+'re' imported but unused
+NUL
+
+".vimrc" 
+".vimrc" 305L, 7927C
+-- INSERT (paste) --
+
+
+-- INSERT (paste) --
+-- INSERT (paste) --
+
+
+".vimrc" 
+".vimrc" 307L, 8009C written
+".vimrc" 307L, 8009C written
+
+".vimrc" 
+".vimrc" 307L, 8009C written
+".vimrc" 307L, 8009C written
+
+shell returned 127
+
+
+".vimrc" 
+".vimrc" 307L, 8009C written
+".vimrc" 307L, 8009C written
+
+--- Options ---
+  autochdir           hidden              pastetoggle=,p      textwidth=78
+  background=dark     hlsearch            ruler               visualbell
+  colorcolumn=95      incsearch           scroll=25           wildignore=*.pyc
+  commentstring="%s   langmenu=none       shiftwidth=4        wildignorecase
+  expandtab           laststatus=2        shortname           wildmenu
+  filetype=vim        macmeta             showcmd             t_Co=256
+nofoldenable          mouse=a             smartcase           t_vb=
+  guitablabel=%M%t    number              switchbuf=useopen
+  helplang=en         paste               syntax=vim
+  backspace=indent,eol,start
+  comments=sO:" -,mO:"  ,eO:"",:"
+  fileencoding=utf-8
+  fileencodings=ucs-bom,utf-8,default,latin1
+  guifont=Consolas For Powerline:h13
+  indentexpr=GetVimIndent()
+  indentkeys=0{,0},:,0#,!^F,o,O,e,=end,=else,=cat,=fina,=END,0\
+  printexpr=system('open -a Preview '.v:fname_in) + v:shell_error
+  runtimepath=~/.vim,~/.vim/bundle/autotag,~/.vim/bundle/cscope_maps,~/.vim/bundle/ctrl-p,~/.vim/bundle/django.vim,~/.vim/bundle/gist-vim,~/.vim/bundle/git,~/.vim/bundle/html.vim,~/.vim/bundle/htmldjango,~/.vim/bundle/htmljinja,~/.vim/bundle/jinja.vim,~/.vim/bundle/mako.vim,~/.vim/bundle/matchit,~/.vim/bundle/nerdcommenter,~/.vim/bundle/nerdtree,~/.vim/bundle/pep-8,~/.vim/bundle/proj-vim,~/.vim/bundle/pydoc-vim,~/.vim/bundle/pyflakes-pathogen,~/.vim/bundle/python.vim,~/.vim/bundle/solarized-colors,~/.vim/bundle/supertab,~/.vim/bundle/surround,~/.vim/bundle/taglist,~/.vim/bundle/vim-powerline,~/.vim/bundle/vim-repeat,~/.vim/bundle/vim-virtualenv,~/.vim/bundle/webapi-vim,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/vimfiles/after,~/.vim/after
+  showbreak=        
+  statusline=%!Pl#Statusline(0,1)
+  termencoding=utf-8
+  verbosefile=~/.vim/msgfile
+
+No mapping found
+
+No mapping found
+Error detected while processing /Users/dylan/.vimrc:
+line  259:
+E174: Command already exists: add ! to replace it
+line  260:
+E174: Command already exists: add ! to replace it
+line  261:
+E174: Command already exists: add ! to replace it
+line  262:
+E174: Command already exists: add ! to replace it
+
+
+NERDTree: Please wait, caching a large dir ...
+NERDTree: Please wait, caching a large dir ... DONE (100 nodes cached).
+99 more lines
+No matching autocommands
+
+
+
+No matching autocommands
+111 fewer lines
+6 more lines
+
+E32: No file name
+
+"~/projects/code/py/reddit/easy112/butt.py" 
+"~/projects/code/py/reddit/easy112/butt.py" [New] 7L, 171C written
+"~/projects/code/py/reddit/easy112/butt.py" [New] 7L, 171C written
+
+"butt.py" 
+"butt.py" 7L, 171C written
+"butt.py" 7L, 171C written
+
+18 fewer lines
+16 more lines
+
+28 fewer lines
+30 more lines
+
+42 fewer lines
+43 more lines
+
+55 fewer lines
+46 more lines
+
+"payment.html" 
+"payment.html" 39L, 2509C
+
+
+63 substitutions on 38 lines
+63 substitutions on 38 lines
+
+38 changes; before #1  2 seconds ago
+
+63 substitutions on 38 lines
+63 substitutions on 38 lines
+
+
+
+No mapping found
+
+No mapping found-- VISUAL --
+
+
+E14: Invalid address
+
+E492: Not an editor command: git
+
+NERDTree: Please wait, caching a large dir ...
+NERDTree: Please wait, caching a large dir ... DONE (100 nodes cached).
+99 more lines
+No matching autocommands
+
+/vimrc
+
+
+".vimrc" 
+".vimrc" 307L, 8009C
+/diff
+
+/diff
+-- INSERT --
+
+
+".vimrc" 
+".vimrc" 307L, 8011C written
+".vimrc" 307L, 8011C written
+
+
+
+No matching autocommands
+111 fewer lines
+10 more lines
+
+22 fewer lines
+13 more lines
+
+25 fewer lines
+22 more lines
+
+34 fewer lines
+26 more lines
+
+"butt.py" 
+"butt.py" 7L, 171C
+'re' imported but unused-- INSERT --
+
+-- ^X++ mode (/^E/^Y/^L/^N/^K/^T/^I/^]/^F/^D/^V/^P/^U/^O/s/n/p)-- ^X mode (^]^D^E^F^I^K^L^N^O^Ps^U^V^Y)-- Omni completion (^O^N^P) -- Searching...-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 1 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) Back at original-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 1 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 2 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 3 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 4 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 5 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 6 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 7 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 8 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 9 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 10 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 11 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 12 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 13 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 14 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 15 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 16 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 17 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 18 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 17 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 18 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 19 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 20 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 21 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 22 of 49-- Omni completion (^O^N^P)-- Omni completion (^O^N^P)-- Omni completion (^O^N^P) match 23 of 49-- INSERT ---- INSERT ---- INSERT ---- INSERT --
+
+could not compile: invalid syntax (butt.py, line 7)-- VISUAL --
+could not compile: invalid syntax (butt.py, line 7)-- INSERT ---- INSERT ---- INSERT ---- INSERT --
+
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+
+
+could not compile: invalid syntax (butt.py, line 11)
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: <wikipedia>
+
+E486: Pattern not found: <wikipedia>
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+
+
+
+".vimrc" 307 lines --29%--
+/autochdir
+
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+could not compile: invalid syntax (butt.py, line 11)
+/wiki/+-2
+
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+/wikipedia/s-2
+
+could not compile: invalid syntax (butt.py, line 11)
+
+could not compile: invalid syntax (butt.py, line 10)
+
+could not compile: invalid syntax (butt.py, line 9)
+
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)
+
+
+".vimrc" 307 lines --21%--
+/VIMRC
+
+/VIMRC
+
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP-- INSERT --
+
+
+".vimrc" 
+".vimrc" 308L, 8057C written
+".vimrc" 308L, 8057C written
+
+could not compile: invalid syntax (butt.py, line 8)
+
+--- Options ---
+  autochdir           foldmethod=indent   laststatus=2        scroll=19           switchbuf=useopen   wrapmargin=5
+  autoindent          guitablabel=%M%t    macmeta             shiftwidth=4        syntax=python       t_Co=256
+  background=dark     helplang=en         modified            shortname           textwidth=79        t_vb=
+  colorcolumn=95      hidden              mouse=a             showcmd             visualbell
+  commentstring=#%s   hlsearch            number              smartcase           wildignore=*.pyc
+  expandtab           incsearch           pastetoggle=,p      softtabstop=4       wildignorecase
+  filetype=python     langmenu=none       ruler               suffixesadd=.py     wildmenu
+  backspace=indent,eol,start
+  cinkeys=0{,0},0),:,!^F,o,O,e
+  cinwords=if,elif,else,for,while,with,try,except,finally,def,class
+  comments=s1:/*,mb:*,ex:*/,://,b:#,:XCOMM,n:>,fb:-
+  fileencoding=utf-8
+  fileencodings=ucs-bom,utf-8,default,latin1
+  guifont=Consolas For Powerline:h13
+  include=s*\(from\|import\)
+  includeexpr=substitute(v:fname,'\.','/','g')
+  indentexpr=GetPythonIndent(v:lnum)
+  indentkeys=0{,0},:,!^F,o,O,e,<:>,=elif,=except
+  omnifunc=pythoncomplete#Complete
+  printexpr=system('open -a Preview '.v:fname_in) + v:shell_error
+  runtimepath=~/.vim,~/.vim/bundle/autotag,~/.vim/bundle/cscope_maps,~/.vim/bundle/ctrl-p,~/.vim/bundle/django.vim,~/.vim/bundle/gist-vim,~/.vim/bundle/git,~/.vim/bundle/html.vim,~/.vim/bundle/htmldjango,~/.vim/bundle/htmljinja,~/.vim/bundle/jinja.vim,~/.vim/bundle/mako.vim,~/.vim/bundle/matchit,~/.vim/bundle/nerdcommenter,~/.vim/bundle/nerdtree,~/.vim/bundle/pep-8,~/.vim/bundle/proj-vim,~/.vim/bundle/pydoc-vim,~/.vim/bundle/pyflakes-pathogen,~/.vim/bundle/python.vim,~/.vim/bundle/solarized-colors,~/.vim/bundle/supertab,~/.vim/bundle/surround,~/.vim/bundle/taglist,~/.vim/bundle/vim-powerline,~/.vim/bundle/vim-repeat,~/.vim/bundle/vim-virtualenv,~/.vim/bundle/webapi-vim,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/7.3-65/MacVim.app/Contents/Resources/vim/vimfiles/after,~/.vim/after
+  showbreak=        
+  statusline=%!Pl#Statusline(0,1)
+  termencoding=utf-8
+  verbosefile=~/.vim/msgfile
+
+No mapping found
+
+No mapping found
+Error detected while processing /Users/dylan/.vimrc:
+line  260:
+E174: Command already exists: add ! to replace it
+line  261:
+E174: Command already exists: add ! to replace it
+line  262:
+E174: Command already exists: add ! to replace it
+line  263:
+E174: Command already exists: add ! to replace it
+
+
+
+/[a-zA-Z0-9]
+
+
+-- VISUAL LINE --
+
+E481: No range allowed
+
+nohlsearch
+/[\w]
+
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+E11: Invalid in command-line window; <CR> executes, CTRL-C quits
+
+/\w
+
+/[a-zA-Z0-9\-\_\.\,\~]
+
+'re' imported but unused-- VISUAL ---- VISUAL --
+
+
+"validate.py" 
+"validate.py" 42L, 1300C
+
+'urljoin' imported but unused
+'parse_qsl' imported but unused
+'re' imported but unused-- VISUAL ---- INSERT ---- INSERT ---- INSERT --
+-- INSERT --
+-- INSERT --
+
+
+-- INSERT ---- INSERT --
+
+-- VISUAL ---- VISUAL ---- VISUAL ---- VISUAL ---- VISUAL ---- VISUAL ---- VISUAL --
+29 fewer lines
+29 fewer lines
+
+
+
+-- INSERT ---- INSERT ---- INSERT --
+
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)-- INSERT --
+
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)
+could not compile: invalid syntax (butt.py, line 8)-- INSERT ---- INSERT --
+
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)-- INSERT --
+-- INSERT ---- INSERT --
+E117: Unknown function: smart_tabcomplete
+E15: Invalid expression: smart_tabcomplete()-- INSERT ---- INSERT --
+
+could not compile: expected an indented block (butt.py, line 12)
+-- INSERT --
+E117: Unknown function: smart_tabcomplete
+-- INSERT --
+E117: Unknown function: smart_tabcomplete
+E15: Invalid expression: smart_tabcomplete()
+-- INSERT --
+E117: Unknown function: smart_tabcomplete
+E15: Invalid expression: smart_tabcomplete()
+
+could not compile: expected an indented block (butt.py, line 12)-- INSERT ---- INSERT --
+E117: Unknown function: smart_tabcomplete
+E15: Invalid expression: smart_tabcomplete()
+E117: Unknown function: smart_tabcomplete
+E15: Invalid expression: smart_tabcomplete()
+E117: Unknown function: smart_tabcomplete
+E15: Invalid expression: smart_tabcomplete()
+E117: Unknown function: smart_tabcomplete
+E15: Invalid expression: smart_tabcomplete()
+E117: Unknown function: smart_tabcomplete
+
+could not compile: expected an indented block (butt.py, line 12)-- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT --
+-- VISUAL LINE ---- VISUAL LINE --
+
+"$MYVIMRC" [New File]
+
+
+
+"$MYVIMRC" [New file] --No lines in buffer--
+
+E37: No write since last change (add ! to override)
+E162: No write since last change for buffer "butt.py"
+"butt.py" [Modified] 12 lines --100%--
+
+"butt.py" 
+"butt.py" 12L, 359C written
+"butt.py" 12L, 359C written
+
+
+
+".vimrc" 308 lines --56%--
+
+/autocomplete
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: autocomplete-- VISUAL LINE --
+
+
+E99: Current buffer is not in diff mode-- INSERT --
+
+
+1 more line; before #4  3 seconds ago
+
+2 more lines; before #3  15 seconds ago
+
+".vimrc" 
+".vimrc" 308L, 8057C written
+".vimrc" 308L, 8057C written
+
+"options.txt" 
+"options.txt" [readonly] 8323L, 355313C
+
+"supertab.txt" 
+"supertab.txt" [readonly] 355L, 15903C
+"insert.txt" 
+"insert.txt" [readonly] 1958L, 80598C
+
+"supertab.txt" [readonly] 355 lines --10%--
+
+g:SuperTabContextDefaultCompletionType  <c-p>
+
+g:SuperTabCrMapping   #1
+/SuperTabNoComplete
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: SuperTabNoComplete-- INSERT --
+E117: Unknown function: smart_tabcomplete
+-- INSERT ---- INSERT ---- INSERT --
+-- INSERT --
+E117: Unknown function: smart_tabcomplete
+
+/smart
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: smart-- VISUAL LINE --
+5 lines yanked
+5 more lines
+5 more lines-- VISUAL LINE --
+5 lines <ed 1 time-- INSERT --
+E117: Unknown function: smart_tabcomplete
+E15: Invalid expression: smart_tabcomplete()
+-- VISUAL LINE --
+4 lines >ed 1 time-- INSERT --
+
+
+".vimrc" 
+".vimrc" 313L, 8274C written
+".vimrc" 313L, 8274C written-- INSERT --
+E117: Unknown function: smart_tabcomplete
+
+
+E149: Sorry, no help for smart_tabcomplete
+
+E149: Sorry, no help for tabcomplete
+/tabcomplete
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: tabcomplete
+
+"insert.txt" [readonly] 1958 lines --29%--
+-- INSERT --
+E117: Unknown function: smart_tabcomplete
+E15: Invalid expression: smart_tabcomplete()
+E117: Unknown function: smart_tabcomplete
+
+
+"butt.py" 
+"butt.py" 12L, 351C written
+"butt.py" 12L, 351C written
+
+
+
+".vimrc" 
+".vimrc" 313L, 8274C written
+".vimrc" 313L, 8274C written
+
+".vimrc" 
+".vimrc" 313L, 8274C written
+".vimrc" 313L, 8274C written
+
+g:SuperTabContextDefaultCompletionType  <c-p>
+
+g:SuperTabCompletionContexts ['s:ContextText']
+
+".vimrc" 
+".vimrc" 313L, 8274C written
+
+No mapping found
+
+No mapping found
+
+"$MYVIMRC" [New File]
+
+NERDTree: Please wait, caching a large dir ...
+NERDTree: Please wait, caching a large dir ... DONE (102 nodes cached).
+101 more lines
+No matching autocommands
+
+
+"dylan" [Not edited] --No lines in buffer--
+"dylan" [Not edited] --No lines in buffer--
+"dylan"  --No lines in buffer--
+"dylan"  --No lines in buffer--
+Error detected while processing function netrw#Explore..netrw#LocalBrowseCheck..<SNR>56_NetrwBrowse..<SNR>56_NetrwMaps:
+line  118:
+E225: global mapping already exists for 
+Error detected while processing function netrw#Explore..netrw#LocalBrowseCheck..<SNR>56_NetrwBrowse..<SNR>56_NetrwMaps:
+line  123:
+E225: global mapping already exists for 
+Error detected while processing function netrw#Explore..netrw#LocalBrowseCheck..<SNR>56_NetrwBrowse..<SNR>56_NetrwMaps:
+line  127:
+E121: Undefined variable: s:didstarstar
+Error detected while processing function netrw#Explore..netrw#LocalBrowseCheck..<SNR>56_NetrwBrowse..<SNR>56_NetrwMaps:
+line  127:
+E15: Invalid expression: s:didstarstar || !mapcheck("<s-down>","n")
+Error detected while processing function netrw#Explore..netrw#LocalBrowseCheck..<SNR>56_NetrwBrowse..<SNR>56_NetrwMaps:
+line  131:
+E121: Undefined variable: s:didstarstar
+Error detected while processing function netrw#Explore..netrw#LocalBrowseCheck..<SNR>56_NetrwBrowse..<SNR>56_NetrwMaps:
+line  131:
+E15: Invalid expression: s:didstarstar || !mapcheck("<s-up>","n")
+Error detected while processing function netrw#Explore..netrw#LocalBrowseCheck..<SNR>56_NetrwBrowse..<SNR>56_PerformListing..<SNR>56_NetrwBookHistHandler..<SNR>56_NetrwBookmarkMenu:
+line   10:
+E329: No menu "Bookmarks"
+Error detected while processing function netrw#Explore..netrw#LocalBrowseCheck..<SNR>56_NetrwBrowse..<SNR>56_PerformListing..<SNR>56_NetrwBookHistHandler..<SNR>56_NetrwBookmarkMenu:
+line   11:
+E329: No menu "Bookmark Delete"
+E486: Pattern not found: ^$
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: \<core\%(\.\d\+\)\=\>
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: \.h$
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: \.c$
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: \.cpp$
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: \.o$
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: \.obj$
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: \.info$
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+E486: Pattern not found: ^\d\{3}ÿ\d\{3}\/
+ 
+
+
+
+".vimrc" 
+".vimrc" 313L, 8274C-- INSERT ---- INSERT --
+-- INSERT ---- INSERT --
+
+
+".vimrc" 
+".vimrc" 313L, 8274C written
+".vimrc" 313L, 8274C written-- REPLACE --
+
+
+1 change; before #2  8 seconds ago
+
+
+No matching autocommands
+113 fewer lines
+10 more lines
+
+22 fewer lines
+13 more lines
+
+25 fewer lines
+22 more lines
+
+34 fewer lines
+26 more lines
+
+"butt.py" 
+"butt.py" 12L, 351C
+
+could not compile: expected an indented block (butt.py, line 8)
+could not compile: expected an indented block (butt.py, line 8)-- INSERT ---- INSERT --
+-- INSERT ---- INSERT ---- INSERT --
+
+-- INSERT --
+
+could not compile: expected an indented block (butt.py, line 9)-- INSERT --
+
+could not compile: expected an indented block (butt.py, line 9)-- INSERT ---- INSERT ---- User defined completion (^U^N^P) -- Searching...-- User defined completion (^U^N^P) The only match-- User defined completion (^U^N^P) The only match-- INSERT ---- INSERT ---- INSERT ---- User defined completion (^U^N^P) -- Searching...-- User defined completion (^U^N^P) The only match-- User defined completion (^U^N^P) The only match-- INSERT ---- INSERT ---- INSERT ---- User defined completion (^U^N^P) -- Searching...-- User defined completion (^U^N^P) The only match-- User defined completion (^U^N^P) -- Searching...-- User defined completion (^U^N^P) Pattern not found-- INSERT ---- INSERT ---- INSERT ---- INSERT --
+
+local variable 'm' is assigned to but never used-- INSERT --
+
+local variable 'm' is assigned to but never used
+undefined name 'url1'-- INSERT --
+
+
+local variable 'm' is assigned to but never used-- INSERT --
+
+
+"butt.py" 
+"butt.py" 14L, 398C written
+"butt.py" 14L, 398C written-- INSERT --
+-- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT --
+
+
+"butt.py" 
+"butt.py" 17L, 503C written
+"butt.py" 17L, 503C written
+undefined name 'url'-- INSERT --
+
+
+"butt.py" 
+"butt.py" 18L, 525C written
+"butt.py" 18L, 525C written
+
+E37: No write since last change (add ! to override)
+E162: No write since last change for buffer "/Users/dylan/.vimrc"
+
+".vimrc" 
+".vimrc" 313L, 8274C written
+
+".netrwhist" [Not edited] --No lines in buffer--
+"~/.vim/.netrwhist" 9L, 482C written
+
+No mapping found
+
+No mapping found
+".vimrc" 
+".vimrc" 313L, 8274C
+/wild
+
+
+
+No mapping found
+
+No mapping found
+
+4 more lines
+No matching autocommands
+
+
+".vimrc" 
+".vimrc" 313L, 8274C
+
+
+".vim/.gvimrc" 
+".vim/.gvimrc" [New] 313L, 8274C written
+".vim/.gvimrc" [New] 313L, 8274C written
+
+
+No mapping found
+
+No mapping found
+
+
+No mapping found
+
+No mapping found
+
+NERDTree: Please wait, caching a large dir ...
+NERDTree: Please wait, caching a large dir ... DONE (101 nodes cached).
+100 more lines
+No matching autocommands
+
+".vimrc" 
+".vimrc" 313L, 8274C
+/wild
+
+/wild
+
+
+
+Already at oldest change
+/background
+-- VISUAL LINE --
+/background
+
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+/background
+
+search hit BOTTOM, continuing at TOP
+search hit BOTTOM, continuing at TOP
+
+nohlsearch
+/langmenu
+
+search hit BOTTOM, continuing at TOP
+E486: Pattern not found: langmenu
+
+
+112 fewer lines
+56 more lines
+
+68 fewer lines
+100 more lines
+
+112 fewer lines
+100 more lines
+
+103 fewer lines
+116 more lines
+
+119 fewer lines
+81 more lines
+116 more lines
+
+199 fewer lines
+116 more lines
+
