@@ -1,4 +1,5 @@
-" .vimrc <chrishoney@gmail.com>                                        "
+import pdb
+".gvimrc <dtuominen@gmail.com>                                        "
 "----------------------------------------------------------------------"
 " settings                                                             "
 "----------------------------------------------------------------------"
@@ -64,7 +65,7 @@ set shiftwidth=4
 set wrap
 set autochdir
 set autoindent
-set tw=95
+"set tw=95
 set co=99
 set encoding=utf-8
 set wm=5
@@ -75,24 +76,22 @@ set nolbr
 set cc=95
 " Recognize <ESC> key in insert mode
 set ek
+set browserdir=buffer
 
 "--- misc ----"
 set macmeta
 set vfile=~/.vim/msgfile
 set ts=8
 set sts=4
-" ---folds--- "
-" ----------- "
-set fen
-set fdl=0
-set fdls=-1
-set fdm=indent
 
 " ----diff---- "
 " ------------ "
 set nodiff
 set dip=filler
 
+" vim-virtualenv "
+" -------------- "
+let g:virtualenv_auto_activate=1
 " shortname
 set sn
 " backspace "
@@ -101,7 +100,7 @@ set backspace=indent,eol,start
 
 " history "
 " ------- "
-set history=10000
+set history=100000
 runtime macros/matchit.vim
 " wildmenu
 set wmnu
@@ -139,13 +138,13 @@ au BufNewFile,BufRead .bashrc,.bash_profile,.bash_aliases,.bash_functions,.profi
 "------"
 au BufNewFile,BufRead *.html set filetype=htmldjango
 au BufNewFile,BufRead *.html set tabstop=4 softtabstop=2 shiftwidth=2 textwidth=0
-
 " ctags "
 "-------"
 autocmd BufWritePost *
     \ if filereadable('tags') |
     \   call system('ctags -a '.expand('%')) |
     \ endif
+nmap ,t: :!(cd %:p:h;ctags *.[ch])&
 "----------------------------------------------------------------------"
 " key binds                                                            "
 "----------------------------------------------------------------------"
@@ -169,8 +168,8 @@ set hidden
 " set mapleader
 let mapleader = ','
 " make testing vimrc easier
-nnoremap <silent> <leader>rc :source $MYVIMRC<cr>
-nnoremap <silent> <leader>vrc :o $MYVIMRC<cr>
+nnoremap <C-s>r :source $MYGVIMRC<cr>
+nnoremap <C-s>c :vs $MYGVIMRC<cr>
 
 "make ` key easier to reach
 noremap `' 
@@ -218,16 +217,11 @@ nnoremap <C-1> :bn
 "----------------------------------------------------------------------"
 " key binds                                                            "
 "----------------------------------------------------------------------"
+" python "
+nnoremap <leader>y :!python %<CR>
 " plugin specific                      "
 "--------------------------------------"
-" Gundo
-map <leader>g :GundoToggle<CR>
-" vim-repeat  "
-" ---------   "
-silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
-
-" django surround "
-"-----------------"
+"
 " insert mode "
 " - - - - - - -"
 imap <leader>s <C-g>s
@@ -239,8 +233,9 @@ nnoremap <leader>swp :s/\(.*\):\(.*\)/\2 : \1/
 "----------------------------------------------------------------------"
 "-----plugin options-----
 " -----pyflakes----- "
-let g:pyflakes_use_quickfix = 0
-let g:pep8_map='<leader>8'
+let g:khuno_ignore="W402,E501,W806"
+"let g:pyflakes_use_quickfix = 0
+"let g:pep8_map='<leader>8'
 
 " -----nerdtree----- "
 map <leader>nt :NERDTreeToggle<CR>
@@ -257,12 +252,13 @@ let g:gist_open_browser_after_post = 1
 " -----Powerlines----- "
 let g:Powerline_symbols = 'fancy'
 " -----Command remaps----- "
-:command W w
-:command WQ wq
-:command Wq wq
-:command Q q
+:command! W w
+:command! WQ wq
+:command! Wq wq
+:command! Q q
 
 " -----ctags setup----- "
+set tags=./tags,./../tags,tags,~/.commontags
 nnoremap <C-g> :tag 
 nnoremap <leader>t :tselect
 nnoremap ]t :tnext
@@ -304,10 +300,55 @@ function! Smart_TabComplete()
     return "\<C-X>\<C-O>"                         " plugin matching
   endif
 endfunction
-inoremap <tab> <c-r>=smart_tabcomplete()<cr>
+inoremap <tab> <c-r>=Smart_TabComplete()<CR>
 autocmd FileType *
     \ if &omnifunc != '' |
     \   call SuperTabChain(&omnifunc, "<c-p>") |
     \   call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
     \ endif
 let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
+def SetBreakpoint():
+    import re
+    nLine = int( vim.eval( 'line(".")'))
+
+    strLine = vim.current.line
+    strWhite = re.search( '^(\s*)', strLine).group(1)
+
+    vim.current.buffer.append(
+       "%(space)spdb.set_trace() %(mark)s Breakpoint %(mark)s" %
+         {'space':strWhite, 'mark': '#' * 30}, nLine - 1)
+
+    for strLine in vim.current.buffer:
+        if strLine == "import pdb":
+            break
+    else:
+        vim.current.buffer.append( 'import pdb', 0)
+        vim.command( 'normal j1')
+
+vim.command( 'map <f7> :py SetBreakpoint()<cr>')
+
+def RemoveBreakpoints():
+    import re
+
+    nCurrentLine = int( vim.eval( 'line(".")'))
+
+    nLines = []
+    nLine = 1
+    for strLine in vim.current.buffer:
+        if strLine == "import pdb" or strLine.lstrip()[:15] == "pdb.set_trace()":
+            nLines.append( nLine)
+        nLine += 1
+
+    nLines.reverse()
+
+    for nLine in nLines:
+        vim.command( "normal %dG" % nLine)
+        vim.command( "normal dd")
+        if nLine < nCurrentLine:
+            nCurrentLine -= 1
+
+    vim.command( "normal %dG" % nCurrentLine)
+
+vim.command( "map <s-f7> :py RemoveBreakpoints()<cr>")
+EOF
+vim:syntax=vim

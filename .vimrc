@@ -1,4 +1,4 @@
-" .vimrc <chrishoney@gmail.com>                                        "
+" .vimrc <dtuominen@gmail.com>                                        "
 "----------------------------------------------------------------------"
 " settings                                                             "
 "----------------------------------------------------------------------"
@@ -8,10 +8,11 @@
 "---------"
 
 " enable pathogen to load plugins from ~/.vim/bundle
-set nocompatible
+"set nocompatible
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
+set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
 " colorscheme "
 "-------------"
@@ -50,17 +51,52 @@ set shiftwidth=4
 
 " document "
 "----------"
+set wrap
+set formatoptions=cq textwidth=72 foldignore= wildignore+=*.py[co]
+set autochdir
 set autoindent
-set textwidth=80
+set textwidth=95
 set encoding=utf-8
+set wm=5
+set smartcase
 
+" folding "
+" ------- "
+"nnoremap <Space> za
+" vim-virtualenv "
+" -------------- "
+let g:virtualenv_directory="$WORKON_HOME/.venvs" 
+let g:virtualenv_auto_activate=1
+let g:virtualenv_stl_format = '[%n]'
+" shortname
+set sn
 " backspace "
 " --------- "
 set backspace=indent,eol,start
 
+" history "
+" ------- "
+set history=100000
+" matchit "
+" ------- "
+source $VIMRUNTIME/macros/matchit.vim
+
+" wildmenu
+set wmnu
 "--------------------------------------------------------------------"
 " settings                                                           "
 "--------------------------------------------------------------------"
+" statusline                                                         "
+set laststatus=2
+
+let g:Powerline_stl_path_style = 'full'
+let g:Powerline_theme = 'solarized256'
+let g:Powerline_colorscheme = 'solarized256'
+let g:Powerline_symbols_override = {
+    \ 'BRANCH': [0x2213],
+    \ 'LINE': 'L',
+    \ }
+set statusline=%!Pl#Statusline(0,1)
 " filetype specific                    "
 "--------------------------------------"
 " python "
@@ -78,12 +114,17 @@ au BufNewFile,BufRead .bashrc,.bash_profile,.bash_aliases,.bash_functions,.profi
 au BufNewFile,BufRead *.html set filetype=htmldjango
 au BufNewFile,BufRead *.html set tabstop=4 softtabstop=2 shiftwidth=2 textwidth=0
 
+" Khuno "
+" ----- "
+nnoremap <silent><Leader>x <Esc>:Khuno show<CR>
+
+" vim-venv "
+" -------- "
+let g:virtualenv_auto_activate=1
+
 " ctags "
 "-------"
-autocmd BufWritePost *
-    \ if filereadable('tags') |
-    \   call system('ctags -a '.expand('%')) |
-    \ endif
+
 "----------------------------------------------------------------------"
 " key binds                                                            "
 "----------------------------------------------------------------------"
@@ -105,7 +146,8 @@ autocmd BufWritePost *
 " set mapleader
 let mapleader = ','
 " make testing vimrc easier
-nnoremap <silent> <leader>rc :source $MYVIMRC<cr>
+nnoremap <C-c>r :source $MYVIMRC<cr>
+nnoremap <C-c>s :vs $MYVIMRC<cr>
 
 " utility "
 "---------"
@@ -138,6 +180,8 @@ nnoremap <leader>] <C-w>+
 nnoremap <leader>[[ 10<C-w>-
 nnoremap <leader>]] 10<C-w>+
 
+nnoremap <leader>sp <C-w>s
+nnoremap <leader>ev <C-w>v
 nnoremap <C-`> :bp
 nnoremap <C-1> :bn
 
@@ -157,17 +201,27 @@ imap <leader>s <C-g>s
 "----------------------------------------------------------------------"
 "-----plugin options-----
 " -----pyflakes----- "
-let g:pyflakes_use_quickfix = 0
-let g:pep8_map='<leader>8'
+"let g:khuno_ignore="W402,E501,W806,E302"
+let g:khuno_ignore="E302"
+let g:khuno_max_line_length=80
+nmap <silent><leader>x <Esc>:Khuno show<CR>
+"let g:pyflakes_use_quickfix = 0
+"let g:pep8_map='<leader>8'
 
 " -----nerdtree----- "
 map <leader>nt :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+let NERDTreeShowBookmarks=1
+let NERDTreeShowLineNumbers=1
 
 " -----Ack-----  "
 nmap <leader>a <ESC>:Ack!
 let g:gist_clip_command = 'pbcopy'
 let g:gist_detect_filetype = 1
-let g:gist_open_browser_after_post = 1
+
+
+" -----Powerlines----- "
+let g:Powerline_symbols = 'fancy'
 
 " -----Command remaps----- "
 :command W w
@@ -175,15 +229,107 @@ let g:gist_open_browser_after_post = 1
 :command Wq wq
 :command Q q
 
+
+" -----Buffer navigation----- "
+:nnoremap <leader>b :bnext<CR>
+:nnoremap <leader>v :bprevious<CR>
+
+" Auto completion via ctrl-space
+set omnifunc=pythoncomplete#Complete
+inoremap <Nul> <C-x><C-o>
+
 " -----ctags setup----- "
+set tags=./tags,./../tags,./../../tags,tags,~/.commontags
 nnoremap <C-g> :tag 
 nnoremap <leader>t :tselect
 nnoremap ]t :tnext
 nnoremap [t :tprev
 inoremap <C-x><c-]> <c-]>
 map <F11> :!ctags -R -a $VIRTUAL_ENV/lib/python2.7/site-packages<CR>
-map <F10> :!ctags -R -a $HOME/django-trunk/django/<CR>
+map <F10> :!ctags -R -a % ~/vtags/tags
+autocmd BufWritePost *
+    \ if filereadable('tags') |
+    \   call system('ctags -a '.expand('%')) |
+    \ endif
 " -----taglist----- "
 map <F4> :TlistToggle<cr>
+
 " -----Proj-Vim----- "
 let g:ProjMapLeader = '<leader>k'
+
+" Python execution "
+" ---------------- "
+
+" Get this plugin from http://www.vim.org/scripts/script.php?script_id=1112
+" Pressing "K" takes you to the documentation for the word under the cursor.
+"autocmd filetype python source bundle/pydoc-vim/ftplugin/python_pydoc.vim
+
+
+" `gf` jumps to the filename under the cursor.  Point at an import statement
+" and jump to it!
+python << EOF
+import os
+import sys
+import vim
+for p in sys.path:
+    if os.path.isdir(p):
+        vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
+EOF
+
+" Execute a selection of code (very cool!)
+" Use VISUAL to select a range and then hit ctrl-h to execute it.
+python << EOL
+import vim
+def EvaluateCurrentRange():
+    eval(compile('\n'.join(vim.current.range),'','exec'),globals())
+EOL
+map <leader>K :py EvaluateCurrentRange()
+
+" Use F7/Shift-F7 to add/remove a breakpoint (pdb.set_trace)
+" Totally cool.
+python << EOF
+def SetBreakpoint():
+    import re
+    nLine = int( vim.eval( 'line(".")'))
+
+    strLine = vim.current.line
+    strWhite = re.search( '^(\s*)', strLine).group(1)
+
+    vim.current.buffer.append(
+       "%(space)spdb.set_trace() %(mark)s Breakpoint %(mark)s" %
+         {'space':strWhite, 'mark': '#' * 30}, nLine - 1)
+
+    for strLine in vim.current.buffer:
+        if strLine == "import pdb":
+            break
+    else:
+        vim.current.buffer.append( 'import pdb', 0)
+        vim.command( 'normal j1')
+
+vim.command( 'map <f7> :py SetBreakpoint()<cr>')
+
+def RemoveBreakpoints():
+    import re
+
+    nCurrentLine = int( vim.eval( 'line(".")'))
+
+    nLines = []
+    nLine = 1
+    for strLine in vim.current.buffer:
+        if strLine == "import pdb" or strLine.lstrip()[:15] == "pdb.set_trace()":
+            nLines.append( nLine)
+        nLine += 1
+
+    nLines.reverse()
+
+    for nLine in nLines:
+        vim.command( "normal %dG" % nLine)
+        vim.command( "normal dd")
+        if nLine < nCurrentLine:
+            nCurrentLine -= 1
+
+    vim.command( "normal %dG" % nCurrentLine)
+
+vim.command( "map <s-f7> :py RemoveBreakpoints()<cr>")
+EOF
+"vim:syntax=vim
